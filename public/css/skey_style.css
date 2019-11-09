@@ -1,0 +1,11 @@
+.skey {
+	padding: 4px 10px !important;
+	margin: 0 2px !important;
+	border-radius: 5px !important;
+}
+
+.skey-light {
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #555;
+}
