@@ -19,7 +19,8 @@ class SKEYPluginActivate
         // Grundeinstellungen festlegen
         $options = array(
             'version'           => SKEY__VERSION,
-            'output_layout'     => 0
+            'key_layout'        => 0,
+            'style'             => 'light'
         );
 
         if (get_option('skey_options')) {

@@ -78,6 +78,50 @@ class SKEYCore
         add_shortcode('skey', array($this, 'shortcode_key'));
     }
 
+    public function key_validate($key)
+    {
+
+        $options = get_option('skey_options');
+
+        $output = $key;
+
+        // Tasten in Großbuchstaben umwandeln
+        if (in_array($key, SKEY__KEYS_UPPERCASE_INPUT)) {
+            $output = strtoupper($key);
+        }
+
+        // Standard Tasten Umwandlung
+        for ($i = 0; $i < count(SKEY__KEYS_STANDARD_INPUT); $i++) {
+
+            if ($key == SKEY__KEYS_STANDARD_INPUT[$i]) {
+                $output = SKEY__KEYS_STANDARD_OUTPUT[$options['key-layout']][$i];
+            }
+        }
+        // Apple Tasten Umwandlung
+        for ($i = 0; $i < count(SKEY__KEYS_APPLE_INPUT); $i++) {
+
+            if ($key == SKEY__KEYS_APPLE_INPUT[$i]) {
+                $output = SKEY__KEYS_APPLE_OUTPUT[$options['key-layout']][$i];
+            }
+        }
+        // Windows Tasten Umwandlung
+        for ($i = 0; $i < count(SKEY__KEYS_WINDOWS_INPUT); $i++) {
+
+            if ($key == SKEY__KEYS_WINDOWS_INPUT[$i]) {
+                $output = SKEY__KEYS_WINDOWS_OUTPUT[$options['key-layout']][$i];
+            }
+        }
+
+        return $output;
+    }
+
+    /**
+     * Shortcode für einzelne Taste
+     *
+     * @param string $atts
+     * @param string $content
+     * @return void
+     */
     public function shortcode_key($atts, $content = null)
     {
 
@@ -91,35 +135,8 @@ class SKEYCore
 
         $key = strtolower(htmlspecialchars($atts['k']));
 
-        $output = $key;
+        $output = $this->key_validate($key);
 
-        // Standard Tasten Umwandlung
-        for ($i = 0; $i < count(SKEY__KEYS_STANDARD_INPUT); $i++) {
-
-            if ($key == SKEY__KEYS_STANDARD_INPUT[$i]) {
-                $output = SKEY__KEYS_STANDARD_OUTPUT[$options['output_layout']][$i];
-            }
-        }
-        // Apple Tasten Umwandlung
-        for ($i = 0; $i < count(SKEY__KEYS_APPLE_INPUT); $i++) {
-
-            if ($key == SKEY__KEYS_APPLE_INPUT[$i]) {
-                $output = SKEY__KEYS_APPLE_OUTPUT[$options['output_layout']][$i];
-            }
-        }
-        // Windows Tasten Umwandlung
-        for ($i = 0; $i < count(SKEY__KEYS_WINDOWS_INPUT); $i++) {
-
-            if ($key == SKEY__KEYS_WINDOWS_INPUT[$i]) {
-                $output = SKEY__KEYS_WINDOWS_OUTPUT[$options['output_layout']][$i];
-            }
-        }
-
-        // Tasten in Großbuchstaben umwandeln
-        if (in_array($key, SKEY__KEYS_UPPERCASE_INPUT)) {
-            $output = strtoupper($key);
-        }
-
-        return '<kbd class="skey skey-light">' . $output . '</kbd>';
+        return '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Taste', 'skey') . ': ' . $output . '">' . $output . '</kbd>';
     }
 }

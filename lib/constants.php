@@ -5,20 +5,87 @@ if( !defined( 'ABSPATH' ) ) {
     die;
 }
 
+// Einstellungen
+define('SKEY__SETTINGS_KEY_LAYOUT', [
+    __('Kurzform', 'zdm'),
+    __('Deutsch', 'zdm'),
+    __('Englisch', 'zdm')
+]);
+define('SKEY__SETTINGS_KEY_LAYOUT_VAL', [
+    0,
+    1,
+    2
+]);
+define('SKEY__SETTINGS_STYLE', [
+    __('Hell', 'zdm'),
+    __('Dunkel', 'zdm')
+]);
+define('SKEY__SETTINGS_STYLE_VAL', [
+    'light',
+    'dark'
+]);
+
 // Apple
 define('SKEY__KEYS_APPLE_INPUT', [
     'cmd',
     'command',
-    'befehl'
+    'befehl',
+    'apple',
+    'apfel',
+    'alt',
+    'wahl',
+    'opt',
+    'option',
+    'fn',
+    'entf',
+    'entfernen',
+    'delete'
 ]);
 define('SKEY__KEYS_APPLE_OUTPUT', array(
     array(
-        'Befehl',
-        'Befehl'
+        'cmd',
+        'cmd',
+        'cmd',
+        'cmd',
+        'cmd',
+        'alt',
+        'alt',
+        'alt',
+        'alt',
+        'fn',
+        'delete',
+        'delete',
+        'delete'
     ),
     array(
         'Befehl',
-        'Befehl'
+        'Befehl',
+        'Befehl',
+        'Befehl',
+        'Befehl',
+        'Wahl',
+        'Wahl',
+        'Wahl',
+        'Wahl',
+        'fn',
+        'entfernen',
+        'entfernen',
+        'entfernen'
+    ),
+    array(
+        'command',
+        'command',
+        'command',
+        'command',
+        'command',
+        'option',
+        'option',
+        'option',
+        'option',
+        'fn',
+        'delete',
+        'delete',
+        'delete'
     )
 ));
 
@@ -35,6 +102,10 @@ define('SKEY__KEYS_WINDOWS_OUTPUT', array(
     array(
         'Windows',
         'Windows'
+    ),
+    array(
+        'Windows',
+        'Windows'
     )
 ));
 
@@ -42,6 +113,7 @@ define('SKEY__KEYS_WINDOWS_OUTPUT', array(
 define('SKEY__KEYS_STANDARD_INPUT', [
     'ctrl',
     'control',
+    'strg',
     'steuerung',
     'enter',
     'eingabe',
@@ -49,32 +121,81 @@ define('SKEY__KEYS_STANDARD_INPUT', [
     'shift',
     'umschalt',
     'tab',
-    'tabulator'
+    'tabulator',
+    'fn',
+    'funktion',
+    'function',
+    'alt',
+    'alt gr',
+    'space',
+    'leer',
+    'leertaste',
+    'leerzeichen'
 ]);
-define('SKEY__KEYS_STANDARD_OUTPUT',  array(
+define('SKEY__KEYS_STANDARD_OUTPUT', array(
     array(
-        'Steuerung',
-        'Steuerung',
-        'Steuerung',
-        'Eingabe',
-        'Eingabe',
-        'Eingabe',
-        'Umschalt',
-        'Umschalt',
+        'Ctrl',
+        'Ctrl',
+        'Ctrl',
+        'Ctrl',
+        'Enter',
+        'Enter',
+        'Enter',
+        'Shift',
+        'Shift',
         'Tab',
-        'Tab'
+        'Tab',
+        'fn',
+        'Alt',
+        'Alt Gr',
+        'space',
+        'space',
+        'space',
+        'space'
     ),
     array(
         'Steuerung',
         'Steuerung',
         'Steuerung',
+        'Steuerung',
         'Eingabe',
         'Eingabe',
         'Eingabe',
         'Umschalt',
         'Umschalt',
+        'Tabulator',
+        'Tabulator',
+        'Funktion',
+        'Funktion',
+        'Funktion',
+        'Alt',
+        'Alt Gr',
+        'Leerzeichen',
+        'Leerzeichen',
+        'Leerzeichen',
+        'Leerzeichen'
+    ),
+    array(
+        'Control',
+        'Control',
+        'Control',
+        'Control',
+        'Return',
+        'Return',
+        'Return',
+        'Shift',
+        'Shift',
         'Tab',
-        'Tab'
+        'Tab',
+        'Function',
+        'Function',
+        'Function',
+        'Alt',
+        'Alt Gr',
+        'space',
+        'space',
+        'space',
+        'space'
     )
 ));
 define('SKEY__KEYS_UPPERCASE_INPUT', [
