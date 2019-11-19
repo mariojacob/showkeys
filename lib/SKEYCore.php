@@ -19,7 +19,7 @@ class SKEYCore
     }
 
     /**
-     * Erzeugt im Backend einen Eintrag mit mehreren Seiten im Menü
+     * Erzeugt im Backend eine Einstellungs-Seite im Reiter Einstellungen
      */
     public function admin_menu()
     {
@@ -32,7 +32,7 @@ class SKEYCore
     }
 
     /**
-     * Admin Optionen
+     * Admin Einstellungen
      */
     public function admin_options_page_skeys()
     {
@@ -47,6 +47,10 @@ class SKEYCore
         // Admin CSS
         wp_register_style('skey_admin_styles', plugins_url('../admin/css/skey_admin_style.css?v=' . SKEY__VERSION . time(), __FILE__));
         wp_enqueue_style('skey_admin_styles');
+
+        // Admin CSS 2
+        wp_register_style('skey_admin_styles_2', plugins_url('../public/css/skey_style.css?v=' . SKEY__VERSION, __FILE__));
+        wp_enqueue_style('skey_admin_styles_2');
     }
 
     /**
@@ -78,6 +82,12 @@ class SKEYCore
         add_shortcode('skey', array($this, 'shortcode_key'));
     }
 
+    /**
+     * Konvertiert die eingegebenen Werte
+     *
+     * @param string $key
+     * @return string
+     */
     public function key_validate($key)
     {
 
@@ -94,21 +104,21 @@ class SKEYCore
         for ($i = 0; $i < count(SKEY__KEYS_STANDARD_INPUT); $i++) {
 
             if ($key == SKEY__KEYS_STANDARD_INPUT[$i]) {
-                $output = SKEY__KEYS_STANDARD_OUTPUT[$options['key-layout']][$i];
+                $output = SKEY__KEYS_STANDARD_OUTPUT[$options['key_layout']][$i];
             }
         }
         // Apple Tasten Umwandlung
         for ($i = 0; $i < count(SKEY__KEYS_APPLE_INPUT); $i++) {
 
             if ($key == SKEY__KEYS_APPLE_INPUT[$i]) {
-                $output = SKEY__KEYS_APPLE_OUTPUT[$options['key-layout']][$i];
+                $output = SKEY__KEYS_APPLE_OUTPUT[$options['key_layout']][$i];
             }
         }
         // Windows Tasten Umwandlung
         for ($i = 0; $i < count(SKEY__KEYS_WINDOWS_INPUT); $i++) {
 
             if ($key == SKEY__KEYS_WINDOWS_INPUT[$i]) {
-                $output = SKEY__KEYS_WINDOWS_OUTPUT[$options['key-layout']][$i];
+                $output = SKEY__KEYS_WINDOWS_OUTPUT[$options['key_layout']][$i];
             }
         }
 
@@ -120,7 +130,7 @@ class SKEYCore
      *
      * @param string $atts
      * @param string $content
-     * @return void
+     * @return string HTML-String
      */
     public function shortcode_key($atts, $content = null)
     {
@@ -129,14 +139,44 @@ class SKEYCore
 
         $atts = shortcode_atts(
             array(
-                'k' => ''
+                'k' => '',
+                's' => ''
                 ), $atts
         );
 
         $key = strtolower(htmlspecialchars($atts['k']));
+        if ($atts['s'] != '') {
+            $key_separator = htmlspecialchars($atts['s']);
+        } else {
+            $key_separator = $options['key_separator'];
+        }
 
-        $output = $this->key_validate($key);
+        $keys_array = explode($key_separator, $key);
 
-        return '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Taste', 'skey') . ': ' . $output . '">' . $output . '</kbd>';
+        if ($keys_array[0] != '') {
+
+            $output[0] = $this->key_validate($keys_array[0]);
+            $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Taste', 'skey') . ': ' . $output[0] . '">' . $output[0] . '</kbd>';
+        }
+
+        if (count($keys_array) >= 1) {
+
+            for ($i=1; $i < count($keys_array); $i++) {
+
+                if ($keys_array[$i] != '') {
+
+                    if ($keys_array[$i-1] != '') {
+                        $output_keys .= ' + ';
+                    }
+    
+                    $output[$i] = $this->key_validate($keys_array[$i]);
+                    $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Taste', 'skey') . ': ' . $output[$i] . '">' . $output[$i] . '</kbd>';
+                }
+            }
+            return $output_keys;
+        } else {
+            $output = $this->key_validate($key);
+            return '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Taste', 'skey') . ': ' . $output . '">' . $output . '</kbd>';
+        }
     }
 }

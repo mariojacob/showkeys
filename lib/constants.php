@@ -146,6 +146,8 @@ define('SKEY__KEYS_STANDARD_OUTPUT', array(
         'Tab',
         'Tab',
         'fn',
+        'fn',
+        'fn',
         'Alt',
         'Alt Gr',
         'space',

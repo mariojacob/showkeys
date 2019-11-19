@@ -1,0 +1,1283 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-11-17 21:35+0100\n"
+"PO-Revision-Date: 2019-11-17 21:35+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/SKEYCore.php:159 lib/SKEYCore.php:173 lib/SKEYCore.php:179
+msgid "Taste"
+msgstr "Key"
+
+#: lib/constants.php:10
+msgid "Kurzform"
+msgstr "Short form"
+
+#: lib/constants.php:11
+msgid "Deutsch"
+msgstr "German"
+
+#: lib/constants.php:12
+msgid "Englisch"
+msgstr "English"
+
+#: lib/constants.php:20
+msgid "Hell"
+msgstr "Bright"
+
+#: lib/constants.php:21
+msgid "Dunkel"
+msgstr "Dark"
+
+#: templates/admin_options_page_skeys.php:32
+msgid "Einstellungen"
+msgstr "Settings"
+
+#: templates/admin_options_page_skeys.php:40
+#: templates/admin_options_page_skeys.php:111
+#: templates/admin_options_page_skeys.php:119
+#: templates/admin_options_page_skeys.php:128
+msgid "Ausgabe"
+msgstr "Output"
+
+#: templates/admin_options_page_skeys.php:45
+msgid "Layout"
+msgstr "Layout"
+
+#: templates/admin_options_page_skeys.php:62
+msgid ""
+"Gibt an ob die Tasten in Kurzform oder in einer bestimmten Sprache (deutsch "
+"oder englisch) ausgegeben werden."
+msgstr ""
+"Specifies whether the keys are printed in short form or in a specific "
+"language (German or English)."
+
+#: templates/admin_options_page_skeys.php:66
+msgid "Style"
+msgstr "Style"
+
+#: templates/admin_options_page_skeys.php:82
+msgid "Bestimmt den grundlegenden Look entweder hell oder dunkel."
+msgstr "Determines the basic look either light or dark."
+
+#: templates/admin_options_page_skeys.php:86
+msgid "Separator Symbol"
+msgstr "Separator symbol"
+
+#: templates/admin_options_page_skeys.php:90
+msgid "Mit diesem Symbol trennst du die Tasten im Shortcode."
+msgstr "With this symbol you separate the keys in the shortcode."
+
+#: templates/admin_options_page_skeys.php:91
+#: templates/admin_options_page_skeys.php:109
+#: templates/admin_options_page_skeys.php:117
+#: templates/admin_options_page_skeys.php:126
+msgid "Beispiel"
+msgstr "Example"
+
+#: templates/admin_options_page_skeys.php:92
+msgid ""
+"Vorsicht: wenn du dieses Separator Symbol änderst, dann gilt das auch für "
+"alle bisher erstellten Shortcodes."
+msgstr ""
+"Caution: if you change this separator symbol, this also applies to all "
+"previously created shortcodes."
+
+#: templates/admin_options_page_skeys.php:102
+msgid "Hilfe"
+msgstr "Help"
+
+#: templates/admin_options_page_skeys.php:107
+msgid "Einfache Ausgabe"
+msgstr "Single output"
+
+#: templates/admin_options_page_skeys.php:115
+msgid "Mehrfach Ausgabe"
+msgstr "Multiple output"
+
+#: templates/admin_options_page_skeys.php:123
+msgid "Sonstiges"
+msgstr "Miscellaneous"
+
+#: templates/admin_options_page_skeys.php:125
+msgid "Wenn du"
+msgstr "If you"
+
+#: templates/admin_options_page_skeys.php:125
+msgid ""
+"ausgeben willst, aber dein Separator Symbol ist \"+\", dann kannst du die "
+"Option"
+msgstr "but your separator symbol is \"+\", then you can choose the option"
+
+#: templates/admin_options_page_skeys.php:125
+msgid ""
+"verwenden um das Separator Symbol nur für diese Shortcode-Ausgabe auf \"#\", "
+"oder ein anderes beliebiges Zeichen zu ändern"
+msgstr ""
+"to change the separator symbol to \"#\", or any other character, just for "
+"that shortcode output"
+
+#: templates/admin_options_page_skeys.php:137
+msgid "Speichern"
+msgstr "Save"
+
+#~ msgid "Version"
+#~ msgstr "Version"
+
+#~ msgid "Release notes"
+#~ msgstr "Release notes"
+
+#~ msgid "release notes"
+#~ msgstr "release notes"
+
+#~ msgid "Dokumentation und Hilfe"
+#~ msgstr "Documentation and help"
+
+#~ msgid "Hilfeseiten für den Einstieg"
+#~ msgstr "Help pages for getting started"
+
+#~ msgid "Shortcodes"
+#~ msgstr "Shortcodes"
+
+#~ msgid "Farben"
+#~ msgstr "Colours"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid ""
+#~ "Hast du Verbesserungsvorschläge oder Anregungen für das Plugin, dann "
+#~ "schreibe mir"
+#~ msgstr ""
+#~ "Do you have suggestions for improvement or suggestions for the plugin, "
+#~ "then write me"
+
+#~ msgid "gefällt, dann schreibe gerne eine"
+#~ msgstr "like, then write a"
+
+#~ msgid "bewerten"
+#~ msgstr "evaluate"
+
+#~ msgid "Bewertung"
+#~ msgstr "Rating"
+
+#~ msgid "Du würdest mir sehr dabei helfen das Plugin bekannter zu machen."
+#~ msgstr "You would help me a lot to make the plugin known."
+
+#~ msgid ""
+#~ "Archive sind komprimierte ZIP-Dateien mit denen du Dateien die du "
+#~ "hochgeladen hast verknüpfen kannst."
+#~ msgstr ""
+#~ "Archives are compressed ZIP files that you can use to link files you've "
+#~ "uploaded."
+
+#~ msgid ""
+#~ "Diese Dateien werden vom Plugin automatisch in eine ZIP-Datei gespeichert "
+#~ "und können mit einem"
+#~ msgstr ""
+#~ "These files are automatically saved by the plugin in a ZIP file and can "
+#~ "be combined with a"
+
+#~ msgid "Shortcode"
+#~ msgstr "Shortcode"
+
+#~ msgid "als Download-Button angezeigt werden."
+#~ msgstr "be displayed as a download button."
+
+#~ msgid ""
+#~ "Wenn du eine Datei aktualisierst oder löscht, dann aktualisiert sich der "
+#~ "Inhalt aller ZIP-Dateien in der sich diese Datei befindet oder befand "
+#~ "automatisch."
+#~ msgstr ""
+#~ "When updating or deleting a file, the contents of all ZIP files in which "
+#~ "this file resides or is automatically updated."
+
+#~ msgid "Dateien können entweder einzeln mit einem"
+#~ msgstr "Files can be either one with one"
+
+#~ msgid ""
+#~ "als Download-Button angezeigt werden oder zu einem Archiv verknüpft und "
+#~ "in Form einer ZIP-Datei als Download-Button angezeigt werden."
+#~ msgstr ""
+#~ "be displayed as a download button or linked to an archive and displayed "
+#~ "in the form of a ZIP file as a download button."
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid ""
+#~ "Um einen leichten und schnellen Einstieg im Umgang mit diesem Plugin zu "
+#~ "bekommen gibt es hier alles was du wissen musst"
+#~ msgstr ""
+#~ "To get an easy and quick start with using this plugin, here is everything "
+#~ "you need to know"
+
+#~ msgid "Hilfeseiten"
+#~ msgstr "Help pages"
+
+#~ msgid "Dateien"
+#~ msgstr "Files"
+
+#~ msgid "Datei hinzufügen"
+#~ msgstr "Add file"
+
+#~ msgid "Archive"
+#~ msgstr "Archive"
+
+#~ msgid "Archiv erstellen"
+#~ msgstr "Create archive"
+
+#~ msgid "Dein Browser unterstützt keine HTML Audio-Elemente."
+#~ msgstr "Your browser does not support HTML audio elements."
+
+#~ msgid "Dein Browser unterstützt keine HTML Video-Elemente."
+#~ msgstr "Your browser does not support HTML video elements."
+
+#~ msgid "Schwarz"
+#~ msgstr "Black"
+
+#~ msgid "Grau 5"
+#~ msgstr "Grey 5"
+
+#~ msgid "Grau 7"
+#~ msgstr "Grey 7"
+
+#~ msgid "Grau 9"
+#~ msgstr "Grey 9"
+
+#~ msgid "Grau 11"
+#~ msgstr "Grey 11"
+
+#~ msgid "Grau 13"
+#~ msgstr "Grey 13"
+
+#~ msgid "Lila"
+#~ msgstr "Purple"
+
+#~ msgid "Blau"
+#~ msgstr "Blue"
+
+#~ msgid "Grün"
+#~ msgstr "Green"
+
+#~ msgid "Gelb"
+#~ msgstr "Yellow"
+
+#~ msgid "Orange"
+#~ msgstr "Orange"
+
+#~ msgid "Rot"
+#~ msgstr "Red"
+
+#~ msgid "keine"
+#~ msgstr "none"
+
+#~ msgid "1 Pixel"
+#~ msgstr "1 pixel"
+
+#~ msgid "2 Pixel"
+#~ msgstr "2 pixel"
+
+#~ msgid "3 Pixel"
+#~ msgstr "3 pixel"
+
+#~ msgid "4 Pixel"
+#~ msgstr "4 pixel"
+
+#~ msgid "5 Pixel"
+#~ msgstr "5 pixel"
+
+#~ msgid "6 Pixel"
+#~ msgstr "6 pixel"
+
+#~ msgid "7 Pixel"
+#~ msgstr "7 pixel"
+
+#~ msgid "8 Pixel"
+#~ msgstr "8 pixel"
+
+#~ msgid "9 Pixel"
+#~ msgstr "9 pixel"
+
+#~ msgid "10 Pixel"
+#~ msgstr "10 pixel"
+
+#~ msgid "keines"
+#~ msgstr "none"
+
+#~ msgid "Pfeil 1"
+#~ msgstr "Arrow 1"
+
+#~ msgid "Pfeil 2"
+#~ msgstr "Arrow 2"
+
+#~ msgid "Download Code"
+#~ msgstr "Download code"
+
+#~ msgid "Cloud Download"
+#~ msgstr "Cloud Download"
+
+#~ msgid "Cloud"
+#~ msgstr "Cloud"
+
+#~ msgid "Cloud Check"
+#~ msgstr "Cloud check"
+
+#~ msgid "Check 1"
+#~ msgstr "Check 1"
+
+#~ msgid "Check 2"
+#~ msgstr "Check 2"
+
+#~ msgid "Check 3"
+#~ msgstr "Check 3"
+
+#~ msgid "Herz 1"
+#~ msgstr "Heart 1"
+
+#~ msgid "Herz 2"
+#~ msgstr "Heart 2"
+
+#~ msgid "Stern 1"
+#~ msgstr "Star 1"
+
+#~ msgid "Stern 2"
+#~ msgstr "Star 2"
+
+#~ msgid "Trophäe"
+#~ msgstr "Trophy"
+
+#~ msgid "Funktion"
+#~ msgstr "Function"
+
+#~ msgid "Erste Schritte"
+#~ msgstr "First steps"
+
+#~ msgid "Fortgeschritten"
+#~ msgstr "Advanced"
+
+#~ msgid "Experte"
+#~ msgstr "Expert"
+
+#~ msgid "Dateien hinzufügen"
+#~ msgstr "Add files"
+
+#~ msgid "Um eine Datei hochzuladen klicke im"
+#~ msgstr "To upload a file click on"
+
+#~ msgid "Menü auf"
+#~ msgstr "Menu on"
+
+#~ msgid "Wähle eine Datei aus und klicke auf \"Hochladen\"."
+#~ msgstr "Select a file and click \"Upload\"."
+
+#~ msgid "Download-Button für Datei mit Shortcode ausgeben"
+#~ msgstr "Download button for file with shortcode"
+
+#~ msgid ""
+#~ "Um eine Datei als Button auf einer Seite oder Beitrag auszugeben klicke im"
+#~ msgstr "To show a file as a button on a page or post click on"
+
+#~ msgid ""
+#~ "Hier siehst du eine Übersicht aller Dateien die du schon hochgeladen hast."
+#~ msgstr ""
+#~ "Here you can see an overview of all files you have already uploaded."
+
+#~ msgid "Der Shortcode wird in der Liste angezeigt und sieht so aus:"
+#~ msgstr "The shortcode appears in the list and looks like this:"
+
+#~ msgid "\"123\" ist die einzigartige ID der jeweiligen Datei."
+#~ msgstr "\"123\" is the unique ID of each file."
+
+#~ msgid ""
+#~ "Du kannst auch auf den Namen klicken um mehr Details zu dieser Datei zu "
+#~ "bekommen, auf der Detailseite siehst du auch weitere Shortcodes die du "
+#~ "verwendenden kannst."
+#~ msgstr ""
+#~ "You can also click on the name to get more details about this file, on "
+#~ "the detail page you can see more shortcodes that you can use."
+
+#~ msgid "ZIP-Archiv anlegen"
+#~ msgstr "Create ZIP archive"
+
+#~ msgid "Um ein ZIP-Archiv zu erstellen klicke im"
+#~ msgstr "To create a ZIP archive click on"
+
+#~ msgid ""
+#~ "Hier kannst du einen Namen, einen ZIP-Namen und sonstige Infos zum Archiv "
+#~ "eintragen."
+#~ msgstr ""
+#~ "Here you can enter a name, a ZIP name and other information about the "
+#~ "archive."
+
+#~ msgid ""
+#~ "Um Dateien zum ZIP-Archiv hinzuzufügen wählst du im unteren Bereich bei "
+#~ "\"Dateien verknüpfen\" aus deinen bereits hochgeladenen Dateien aus und "
+#~ "klickst auf \"Speichern\"."
+#~ msgstr ""
+#~ "In order to add files to the ZIP archive you select in the lower area "
+#~ "under \"Link files\" from your already uploaded files and click on \"Save"
+#~ "\"."
+
+#~ msgid "Download-Button für Archiv mit Shortcode ausgeben"
+#~ msgstr "Print download button for archive with shortcode"
+
+#~ msgid ""
+#~ "Um ein Archiv als Button auf einer Seite oder Beitrag auszugeben klicke im"
+#~ msgstr "To output an archive as a button on a page or post click on"
+
+#~ msgid "Hier siehst du eine Übersicht aller Archive die du erstellt hast."
+#~ msgstr "Here you can see an overview of all archives you have created."
+
+#~ msgid "\"123\" ist die einzigartige ID des jeweiligen Archives."
+#~ msgstr "\"123\" is the unique ID of the respective archive."
+
+#~ msgid ""
+#~ "Du kannst auch auf den Namen klicken um mehr Details zu diesem Archiv zu "
+#~ "bekommen, auf der Detailseite siehst du auch weitere Shortcodes die du "
+#~ "verwendenden kannst."
+#~ msgstr ""
+#~ "You can also click on the name to get more details about this archive, on "
+#~ "the detail page you can see more shortcodes that you can use."
+
+#~ msgid "Button Farbe und Styles"
+#~ msgstr "Button color and styles"
+
+#~ msgid ""
+#~ "Um die Farbe oder sonstige Button-Einstellungen vorzunehmen klicke im"
+#~ msgstr "To make the color or other button settings click in"
+
+#~ msgid "Hier kannst du im Bereich \"Download-Button\" folgendes ändern:"
+#~ msgstr "Here you can change the following in the area \"Download-Button\":"
+
+#~ msgid ""
+#~ "Den Standardtext, den Style (Farbe des Buttons), Outline, Runde Ecken "
+#~ "oder ein Icon."
+#~ msgstr ""
+#~ "The standard text, the style (color of the button), outline, round "
+#~ "corners or an icon."
+
+#~ msgid "Alle verfügbaren Farben findest du auf der"
+#~ msgstr "All available colors can be found on the"
+
+#~ msgid "Webseite"
+#~ msgstr "Webseite"
+
+#~ msgid "Dashboard"
+#~ msgstr "Dashboard"
+
+#~ msgid ""
+#~ "Das Dashboard zeigt dir alle wichtigen Informationen über deine Downloads."
+#~ msgstr ""
+#~ "The dashboard shows you all the important information about your "
+#~ "downloads."
+
+#~ msgid "Download Statistik"
+#~ msgstr "Download statistics"
+
+#~ msgid ""
+#~ "Hier siehst du die Gesamte Anzahl an Datei und Archiv Downloads und die "
+#~ "Downloads der letzten Zeit 30 Tage, 7 Tage und 24 Stunden."
+#~ msgstr ""
+#~ "Here you can see the total number of file and archive downloads and the "
+#~ "latest downloads 30 days, 7 days and 24 hours."
+
+#~ msgid "Letzte Downloads"
+#~ msgstr "Last downloads"
+
+#~ msgid ""
+#~ "Dieser Bereich ist in Archive und Dateien aufgeteilt und zeigt dir die "
+#~ "letzten Downloads mit Namen, Zeit und Datum."
+#~ msgstr ""
+#~ "This area is divided into archives and files and shows you the last "
+#~ "downloads with name, time and date."
+
+#~ msgid "Beliebte Downloads"
+#~ msgstr "Popular Downloads"
+
+#~ msgid ""
+#~ "Dieser Bereich ist auch in Archive und Dateien aufgeteilt und zeigt dir "
+#~ "die fünf beliebtesten Downloads."
+#~ msgstr ""
+#~ "This section is also divided into archives and files and shows you the "
+#~ "five most popular downloads."
+
+#~ msgid "Metadaten ausgeben"
+#~ msgstr "Output metadata"
+
+#~ msgid ""
+#~ "Du kannst eine Datei oder Archiv nicht nur als Button ausgeben sonder "
+#~ "auch weitere Informationen zu diesem Download."
+#~ msgstr ""
+#~ "You can not just print a file or archive as a button but also more "
+#~ "information about this download."
+
+#~ msgid "Download-Anzahl"
+#~ msgstr "Download count"
+
+#~ msgid "oder"
+#~ msgstr "or"
+
+#~ msgid "Dateigröße"
+#~ msgstr "File size"
+
+#~ msgid "Weitere Shortcodes"
+#~ msgstr "More shortcodes"
+
+#~ msgid ""
+#~ "Weitere Shortcode Optionen für die ausgabe erweiterter Metadaten findest "
+#~ "du im Tab"
+#~ msgstr ""
+#~ "More shortcode options for outputting advanced metadata can be found in "
+#~ "the tab"
+
+#~ msgid "oder auf der"
+#~ msgstr "or on the"
+
+#~ msgid "Audioplayer"
+#~ msgstr "Audio Player"
+
+#~ msgid ""
+#~ "Wenn du eine Audiodatei wie zum Beispiel eine MP3-Datei hochlädst kannst "
+#~ "du diese nicht nur als Download-Button anzeigen lassen sondern auch als "
+#~ "Audioplayer."
+#~ msgstr ""
+#~ "If you upload an audio file, such as an MP3 file, you can not only show "
+#~ "it as a download button, but also as an audio player."
+
+#~ msgid ""
+#~ "Der Shortcode für den Audioplayer wird auf der Datei-Detailseite "
+#~ "automatisch angezeigt wenn es sich um eine Audiodatei handelt."
+#~ msgstr ""
+#~ "The audio player shortcode is automatically displayed on the file details "
+#~ "page if it is an audio file."
+
+#~ msgid "Weitere Ausgabeoptionen für den Audioplayer findest du im Tab"
+#~ msgstr "Other output options for the audio player can be found in the tab"
+
+#~ msgid "Videoplayer"
+#~ msgstr "Video player"
+
+#~ msgid ""
+#~ "Wenn du eine Videodatei wie zum Beispiel eine MP4-Datei hochlädst kannst "
+#~ "du diese nicht nur als Download-Button anzeigen lassen sondern auch als "
+#~ "Videoplayer."
+#~ msgstr ""
+#~ "If you upload a video file, such as an MP4 file, you can not only display "
+#~ "it as a download button but also as a video player."
+
+#~ msgid ""
+#~ "Der Shortcode für den Videoplayer wird auf der Datei-Detailseite "
+#~ "automatisch angezeigt wenn es sich um eine Videodatei handelt."
+#~ msgstr ""
+#~ "The video player shortcode is automatically displayed on the file details "
+#~ "page if it is a video file."
+
+#~ msgid "Weitere Ausgabeoptionen für den Videoplayer findest du im Tab"
+#~ msgstr "Other output options for the video player can be found in the tab"
+
+#~ msgid "Hashwert von Datei mit Shortcode ausgeben"
+#~ msgstr "Output hash value of file with shortcode"
+
+#~ msgid "MD5"
+#~ msgstr "MD5"
+
+#~ msgid ""
+#~ "Du kannst den MD5 Hashwert einer Datei oder eines ZIP-Archives ausgeben."
+#~ msgstr "You can output the MD5 hash value of a file or ZIP archive."
+
+#~ msgid "SHA1"
+#~ msgstr "SHA1"
+
+#~ msgid ""
+#~ "Du kannst den SHA1 Hashwert einer Datei oder eines ZIP-Archives ausgeben."
+#~ msgstr "You can output the SHA1 hash value of a file or a ZIP archive."
+
+#~ msgid "Alle Optionen des Audioplayer"
+#~ msgstr "All options of the audio player"
+
+#~ msgid "Autoplay"
+#~ msgstr "Autoplay"
+
+#~ msgid ""
+#~ "Die Option \"autoplay\" gibt an ob der Audioplayer beim Aufruf der Seite "
+#~ "automatisch starten soll oder nicht. Standardmäßig ist diese Funktion "
+#~ "deaktiviert wenn die Option \"autoplay\" nicht angegeben wird."
+#~ msgstr ""
+#~ "The option \"autoplay\" indicates whether the audio player should start "
+#~ "automatically when the page is called or not. By default, this feature is "
+#~ "disabled if the autoplay option is not specified."
+
+#~ msgid "Dauerschleife"
+#~ msgstr "Continuous loop"
+
+#~ msgid ""
+#~ "Wenn die Option \"loop\" auf \"on\" gestellt wird, dann läuft die "
+#~ "Audiodatei in einer Dauerschleife ab. Standardmäßig ist diese Option "
+#~ "deaktiviert."
+#~ msgstr ""
+#~ "If the option \"loop\" is set to \"on\", then the audio file runs in a "
+#~ "continuous loop. By default, this option is disabled."
+
+#~ msgid "Kontrollen deaktivieren"
+#~ msgstr "Disable controls"
+
+#~ msgid ""
+#~ "Die Option \"controls\" ist standardmäßig aktiviert, wenn diese Option "
+#~ "auf \"off\" gestellt wird, dann wird kein Player angezeigt. In Verbindung "
+#~ "mit der Option \"autoplay\" kann so eine Audiodatei automatisch "
+#~ "abgespielt werden ohne einen sichtbaren Player, das ist aber für die "
+#~ "Benutzerfreundlichkeit nicht zu empfehlen."
+#~ msgstr ""
+#~ "The \"controls\" option is enabled by default, if this option is set to "
+#~ "\"off\" then no player will be displayed. In conjunction with the "
+#~ "\"autoplay\" option, an audio file can be played automatically without a "
+#~ "visible player, but this is not recommended for user-friendliness."
+
+#~ msgid ""
+#~ "Natürlich können alle Optionen auch kombiniert werden, das sieht dann so "
+#~ "aus:"
+#~ msgstr "Of course, all options can also be combined, which looks like this:"
+
+#~ msgid "Alle Optionen des Videoplayer"
+#~ msgstr "All options of the video player"
+
+#~ msgid "Breite angeben"
+#~ msgstr "Specify width"
+
+#~ msgid ""
+#~ "Die Option \"w\" ist optional mit der du die Breite des Videos in Form "
+#~ "von \"%\" oder \"px\" angeben kannst. Standardmäßig ist eine Breite von "
+#~ "\"100%\" eingestellt wenn die Option \"w\" nicht angegeben wird."
+#~ msgstr ""
+#~ "The option \"w\" is optional with which you can specify the width of the "
+#~ "video in the form of \"%\" or \"px\". By default, a width of \"100%\" is "
+#~ "set if the option \"w\" is not specified."
+
+#~ msgid ""
+#~ "Die Option \"autoplay\" gibt an ob das Video beim Aufruf der Seite "
+#~ "automatisch starten soll oder nicht. Standardmäßig ist diese Funktion "
+#~ "deaktiviert wenn die Option \"autoplay\" nicht angegeben wird."
+#~ msgstr ""
+#~ "The option \"autoplay\" indicates whether the video should start "
+#~ "automatically when the page is called or not. By default, this feature is "
+#~ "disabled if the autoplay option is not specified."
+
+#~ msgid ""
+#~ "Wenn die Option \"loop\" auf \"on\" gestellt wird, dann läuft das Video "
+#~ "in einer Dauerschleife ab. Standardmäßig ist diese Option deaktiviert."
+#~ msgstr ""
+#~ "If the option \"loop\" is set to \"on\", then the video runs in a "
+#~ "continuous loop. By default, this option is disabled."
+
+#~ msgid ""
+#~ "Die Option \"controls\" ist standardmäßig aktiviert, wenn diese Option "
+#~ "auf \"off\" gestellt wird, dann werden keine Kontrollelemente wie Play, "
+#~ "Pause, Lautstärke, Vollbild, Zeitleiste oder weitere Optionen beim Video "
+#~ "angezeigt. In Verbindung mit der Option autoplay kann so eine Videodatei "
+#~ "automatisch abgespielt werden ohne eine Möglichkeit das Video zu stoppen, "
+#~ "das ist aber für die Benutzerfreundlichkeit nicht zu empfehlen."
+#~ msgstr ""
+#~ "The \"controls\" option is enabled by default, if this option is set to "
+#~ "\"off\", then no controls such as play, pause, volume, full screen, "
+#~ "timeline, or other video options are displayed. In conjunction with the "
+#~ "autoplay option, such a video file can be played automatically without "
+#~ "any possibility to stop the video, but this is not recommended for "
+#~ "usability."
+
+#~ msgid "Audioplayer und Videoplayer mit JavaScript steuern"
+#~ msgstr "Control audio player and video player with JavaScript"
+
+#~ msgid ""
+#~ "Um den Audioplayer mit Hilfe von JavaScript zu steuern besitzt jedes HTML "
+#~ "Audio-Element eine individuelle id, diese setzt sich aus zdmAudio und der "
+#~ "ID der Datei zusammen."
+#~ msgstr ""
+#~ "To control the audio player using JavaScript, each HTML audio element has "
+#~ "an individual id, which is composed of zdmAudio and the ID of the file."
+
+#~ msgid ""
+#~ "Um den Videoplayer mit Hilfe von JavaScript zu steuern besitzt jedes HTML "
+#~ "Video-Element eine individuelle id, diese setzt sich aus zdmVideo und der "
+#~ "ID der Datei zusammen."
+#~ msgstr ""
+#~ "To control the video player using JavaScript, each HTML video element has "
+#~ "its own id, which consists of zdmVideo and the ID of the file."
+
+#~ msgid "IP Adresse Anonymität"
+#~ msgstr "IP address anonymity"
+
+#~ msgid ""
+#~ "Die IP Adresse der Webseitenbesucher die über dieses Plugin etwas "
+#~ "herunterladen ist standardmäßig anonymisiert."
+#~ msgstr ""
+#~ "The IP address of the website visitors who download something via this "
+#~ "plugin is anonymized by default."
+
+#~ msgid ""
+#~ "Um diese Einstellung zu ändern und die IP Adresse vollständig zu tracken "
+#~ "klicke im"
+#~ msgstr ""
+#~ "To change this setting and to completely track the IP address, click on"
+
+#~ msgid "Alles"
+#~ msgstr "Everything"
+
+#~ msgid "Downloads"
+#~ msgstr "Downloads"
+
+#~ msgid "Log Details"
+#~ msgstr "Log details"
+
+#~ msgid "Zurück zur Übersicht"
+#~ msgstr "Back to overview"
+
+#~ msgid "Typ"
+#~ msgstr "Type"
+
+#~ msgid "Details"
+#~ msgstr "Details"
+
+#~ msgid "User Agent"
+#~ msgstr "User Agent"
+
+#~ msgid "IP Adresse"
+#~ msgstr "IP address"
+
+#~ msgid "WordPress Benutzer ID"
+#~ msgstr "WordPress user ID"
+
+#~ msgid "kein WordPress Benutzer"
+#~ msgstr "not a WordPress user"
+
+#~ msgid "Erstellt"
+#~ msgstr "Created"
+
+#~ msgid "Log"
+#~ msgstr "Log"
+
+#~ msgid "Zurück den Einstellungen"
+#~ msgstr "Back the settings"
+
+#~ msgid "Hier ist Ausgabe des Logs der aktuellsten 100 Einträge."
+#~ msgstr "Here is output of the log of the most recent 100 entries."
+
+#~ msgid "Logs filtern nach Typ"
+#~ msgstr "Logs filter by type"
+
+#~ msgid "Aktualisieren"
+#~ msgstr "Update"
+
+#~ msgid "Details anzeigen"
+#~ msgstr "View Details"
+
+#~ msgid "Nach oben"
+#~ msgstr "Up"
+
+#~ msgid "Neues ZIP-Archiv erstellen"
+#~ msgstr "Create new ZIP archive"
+
+#~ msgid "zurück zur Übersicht"
+#~ msgstr "back to overview"
+
+#~ msgid "Archiv erfolgreich erstellt!"
+#~ msgstr "Archive successfully created!"
+
+#~ msgid "Neues Archiv erstellen"
+#~ msgstr "Create a new archive"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "ZIP-Datei Name:"
+#~ msgstr "ZIP file name:"
+
+#~ msgid "Name für die ZIP-Datei die der Besucher herunterladet."
+#~ msgstr "Name of the ZIP file the visitor downloads."
+
+#~ msgid ""
+#~ "Für maximale kompatibilität verwende Bindestriche oder Unterstriche "
+#~ "anstatt Leerzeichen."
+#~ msgstr ""
+#~ "For maximum compatibility, use hyphens or underscores instead of spaces."
+
+#~ msgid "mein-neuer-download"
+#~ msgstr "my-new-download"
+
+#~ msgid "mein_neuer_download"
+#~ msgstr "mein_neuer_download"
+
+#~ msgid "Download-Button Text:"
+#~ msgstr "Download Button Text:"
+
+#~ msgid "Standardtext für den Download-Button ist \""
+#~ msgstr "Default text for the download button is \""
+
+#~ msgid "dieser Text kann in den"
+#~ msgstr "this text can be found in the"
+
+#~ msgid "geändert werden."
+#~ msgstr "be changed."
+
+#~ msgid "Beschreibung:"
+#~ msgstr "Description:"
+
+#~ msgid "Count:"
+#~ msgstr "Count:"
+
+#~ msgid "Anzahl an bisherigen Downloads."
+#~ msgstr "Number of previous downloads."
+
+#~ msgid "Dateien verknüpfen"
+#~ msgstr "Link files"
+
+#~ msgid "Für mehr Datei-Verknüpfungen aktiviere"
+#~ msgstr "For more file shortcuts activate"
+
+#~ msgid "Abbrechen"
+#~ msgstr "Cancel"
+
+#~ msgid "Neue Datei hochladen"
+#~ msgstr "Upload new file"
+
+#~ msgid "Status:"
+#~ msgstr "Status:"
+
+#~ msgid "erfolgreich hochgeladen."
+#~ msgstr "successfully uploaded."
+
+#~ msgid "Diese Datei wurde schon einmal hochgeladen und existiert jetzt"
+#~ msgstr "This file has been uploaded once and exists now"
+
+#~ msgid "mal"
+#~ msgstr "times"
+
+#~ msgid "Vorschau"
+#~ msgstr "Preview"
+
+#~ msgid "Datei Download"
+#~ msgstr "Download file"
+
+#~ msgid "Name:"
+#~ msgstr "Name:"
+
+#~ msgid ""
+#~ "Wenn kein Name eingegeben wird, wird automatisch der Dateiname verwendet."
+#~ msgstr "If no name is entered, the file name will be used automatically."
+
+#~ msgid "Löschen"
+#~ msgstr "Delete"
+
+#~ msgid "wurde gelöscht."
+#~ msgstr "was deleted."
+
+#~ msgid "Datei wurde erfolgreich aktualisiert."
+#~ msgstr "File was updated successfully."
+
+#~ msgid "Hochladen"
+#~ msgstr "Upload"
+
+#~ msgid "Maximale Dateigröße für Uploads:"
+#~ msgstr "Maximum file size for uploads:"
+
+#~ msgid "Willkommen bei"
+#~ msgstr "Welcome to"
+
+#~ msgid ""
+#~ "Bringe mehr Struktur in deine Downloads und aktualisiere diese "
+#~ "effizienter."
+#~ msgstr ""
+#~ "Bring more structure into your downloads and update them more efficiently."
+
+#~ msgid "Um das volle Potential dieses Plugins zu Nutzen aktiviere jetzt die"
+#~ msgstr "In order to use the full potential of this plugin activate the"
+
+#~ msgid "Funktionen."
+#~ msgstr "Functions."
+
+#~ msgid "Mehr erfahren"
+#~ msgstr "More info"
+
+#~ msgid "Datum"
+#~ msgstr "Date"
+
+#~ msgid "Gelöschtes Archiv"
+#~ msgstr "Deleted archive"
+
+#~ msgid "Gelöschte Datei"
+#~ msgstr "Deleted file"
+
+#~ msgid "Gelöschter Download"
+#~ msgstr "Deleted Download"
+
+#~ msgid "Gesamt"
+#~ msgstr "Total"
+
+#~ msgid "Letzten 30 Tage"
+#~ msgstr "Last 30 days"
+
+#~ msgid "Letzten 7 Tage"
+#~ msgstr "Last 7 days"
+
+#~ msgid "Letzten 24 Stunden"
+#~ msgstr "Last 24 hours"
+
+#~ msgid "Dateien Übersicht"
+#~ msgstr "Files overview"
+
+#~ msgid "Archive Übersicht"
+#~ msgstr "Archive overview"
+
+#~ msgid "Aktualisiert"
+#~ msgstr "Updated"
+
+#~ msgid "Datei gelöscht!"
+#~ msgstr "File deleted!"
+
+#~ msgid "Datei wurde ersetzt!"
+#~ msgstr "File has been replaced!"
+
+#~ msgid "Datei bearbeiten"
+#~ msgstr "Edit file"
+
+#~ msgid "Alle Shortcodes"
+#~ msgstr "Shortcodes"
+
+#~ msgid "im Überblick mit Erklärung und Beispielen."
+#~ msgstr "overview with explanation and examples."
+
+#~ msgid "Download-Button"
+#~ msgstr "Download button text"
+
+#~ msgid "Alle Optionen"
+#~ msgstr "All options"
+
+#~ msgid "für den Videoplayer"
+#~ msgstr "for the video player"
+
+#~ msgid "MD5 Hashwert ausgeben"
+#~ msgstr "Output MD5 hash value"
+
+#~ msgid "SHA1 Hashwert ausgeben"
+#~ msgstr "Output SHA1 hash value"
+
+#~ msgid "Datei ersetzen"
+#~ msgstr "Replace file"
+
+#~ msgid ""
+#~ "Hier kannst du eine neue Datei hochladen, diese ersetzt die aktuelle "
+#~ "Datei, die ID für die Shortcodes bleibt gleich."
+#~ msgstr ""
+#~ "Here you can upload a new file, this will replace the current file, the "
+#~ "ID for the shortcodes remains the same."
+
+#~ msgid "Hochladen und ersetzen"
+#~ msgstr "Upload and replace"
+
+#~ msgid "Maximale Dateigröße für Uploads"
+#~ msgstr "Maximum file size for uploads"
+
+#~ msgid "Allgemeine Informationen"
+#~ msgstr "General information"
+
+#~ msgid "Datei"
+#~ msgstr "File"
+
+#~ msgid "Download-Button Text"
+#~ msgstr "Download button text"
+
+#~ msgid ""
+#~ "Dieser Download-Button Text ist nur für diesen Download, der globale "
+#~ "Standardtext kann in den"
+#~ msgstr ""
+#~ "This text is only displayed for this download, for all others the default "
+#~ "text is used"
+
+#~ msgid "Der Standardtext ist"
+#~ msgstr "The default text is"
+
+#~ msgid ""
+#~ "Um den globale Standardtext wieder zu verwenden, lasse dieses Feld "
+#~ "einfach leer und beim Aktualisieren wird der Standardtext automatisch "
+#~ "eingefügt."
+#~ msgstr ""
+#~ "To reuse the default global text, just leave this field blank and the "
+#~ "default text is automatically inserted when updating."
+
+#~ msgid "Count"
+#~ msgstr "Count"
+
+#~ msgid "Hash MD5"
+#~ msgstr "Hash MD5"
+
+#~ msgid "Hash SHA1"
+#~ msgstr "Hash SHA1"
+
+#~ msgid "Weitere Infos nur für"
+#~ msgstr "More info only for"
+
+#~ msgid ": Hash MD5, Hash SHA1"
+#~ msgstr ": Hash MD5, Hash SHA1"
+
+#~ msgid "Datei löschen"
+#~ msgstr "Delete file"
+
+#~ msgid "Download"
+#~ msgstr "Download"
+
+#~ msgid "Alle Daten wurden erfolgreich gelöscht!"
+#~ msgstr "All data was deleted successfully!"
+
+#~ msgid "Einstellungen aktualisiert!"
+#~ msgstr "Updated settings!"
+
+#~ msgid "ist aktiviert"
+#~ msgstr "is activated"
+
+#~ msgid "Schlüssel"
+#~ msgstr "Key"
+
+#~ msgid "Lizenz aktualisieren"
+#~ msgstr "Update license"
+
+#~ msgid "Profitiere von den"
+#~ msgstr "Benefit from the"
+
+#~ msgid "Funktionen und schalte alle Möglichkeiten von"
+#~ msgstr "Functions and unlock all possibilities"
+
+#~ msgid "frei, mehr Infos"
+#~ msgstr "free, more info"
+
+#~ msgid "Lizensiert für"
+#~ msgstr "Licensed to"
+
+#~ msgid "Erworben"
+#~ msgstr "Acquired"
+
+#~ msgid "Standardtext"
+#~ msgstr "Standard text"
+
+#~ msgid ""
+#~ "Das ist der Standardtext, dieser kann aber je Download individuell "
+#~ "geändert werden."
+#~ msgstr ""
+#~ "This is the default text, but this can be changed individually per "
+#~ "download."
+
+#~ msgid "Wähle aus verschiedenen Button-Farben den Standardwert für Buttons."
+#~ msgstr "Choose from different button colors the default value for buttons."
+
+#~ msgid "Outline"
+#~ msgstr "Outline"
+
+#~ msgid "Diese Option zeigt den Button als Rahmen."
+#~ msgstr "This option shows the button as a frame."
+
+#~ msgid "Runde Ecken"
+#~ msgstr "Round corners"
+
+#~ msgid ""
+#~ "Wenn \"keine\" ausgewählt ist, dann wird der Standardwert deines Themes "
+#~ "verwendet, der Button bleibt eckig."
+#~ msgstr ""
+#~ "If \"none\" is selected then the default value of your theme will be "
+#~ "used, the button will remain square."
+
+#~ msgid "Icon"
+#~ msgstr "Icon"
+
+#~ msgid "Hier sind die verfügbaren Icons:"
+#~ msgstr "Here are the available icons:"
+
+#~ msgid "Nur Icon"
+#~ msgstr "Icon only"
+
+#~ msgid "Diese Option zeigt nur das Icon ohne Text an."
+#~ msgstr "This option displays only the icon without text."
+
+#~ msgid "Erweitert"
+#~ msgstr "Extended"
+
+#~ msgid "IP-Adresse zensieren"
+#~ msgstr "Censor the IP address"
+
+#~ msgid "Zensiert die IP-Adresse beim Download."
+#~ msgstr "Censored the IP address during the download."
+
+#~ msgid "Log anzeigen"
+#~ msgstr "Show log"
+
+#~ msgid "deinstallieren"
+#~ msgstr "uninstall"
+
+#~ msgid ""
+#~ "Pfad von Z-Downloads-Upload-Ordner für Dateien, ZIP-Archive und Cache:"
+#~ msgstr ""
+#~ "Path of Z-Downloads upload folder for Files, ZIP archives, and cache:"
+
+#~ msgid "Achtung vor dem deinstallieren des Plugins"
+#~ msgstr "Attention before uninstalling the plugin"
+
+#~ msgid ""
+#~ "Wenn du das Z-Downloads-Plugin deinstallierst bleiben alle Dateien und "
+#~ "ZIP-Archive im oben genannten Pfad bestehen, wenn du alle Dateien und ZIP-"
+#~ "Archive die du erstellt hast löschen willst, dann klicke unten auf "
+#~ "\"LÖSCHEN\""
+#~ msgstr ""
+#~ "If you uninstall the Z-Downloads-Plugin all files and ZIP-archives remain "
+#~ "in the above path, if you want to delete all files and ZIP-archives you "
+#~ "have created, then click on \"DELETE\" below"
+
+#~ msgid ""
+#~ "Dieser Vorgang ist unwiederuflich und kann nicht rückgängig gemacht "
+#~ "werden."
+#~ msgstr "This process is irreplaceable and can not be undone."
+
+#~ msgid "LÖSCHEN"
+#~ msgstr "DELETE"
+
+#~ msgid "Cache aktualisiert!"
+#~ msgstr "Cache updated!"
+
+#~ msgid "Datei entfernt!"
+#~ msgstr "File removed!"
+
+#~ msgid "Name und ZIP-Datei Name darf nicht leer sein."
+#~ msgstr "Name and ZIP file name can not be empty."
+
+#~ msgid "Archiv gelöscht!"
+#~ msgstr "Archive deleted!"
+
+#~ msgid "Archiv bearbeiten"
+#~ msgstr "Edit archive"
+
+#~ msgid "ZIP-Archiv herunterladen:"
+#~ msgstr "Download ZIP Archive:"
+
+#~ msgid "ZIP-Datei Name"
+#~ msgstr "ZIP file name"
+
+#~ msgid "Beschreibung"
+#~ msgstr "Description"
+
+#~ msgid "Der Cache muss aktualisiert werden für diese Information."
+#~ msgstr "The cache needs to be updated for this information."
+
+#~ msgid "Cache"
+#~ msgstr "Cache"
+
+#~ msgid "Cache ist aktuell"
+#~ msgstr "Cache up-to-date"
+
+#~ msgid "Cache aktualisieren"
+#~ msgstr "Update cache"
+
+#~ msgid "Verknüpfte Dateien"
+#~ msgstr "Linked files"
+
+#~ msgid ""
+#~ "Wenn keine Datei zugewiesen ist, dann wird kein Download-Button im "
+#~ "Frontend angezeigt."
+#~ msgstr ""
+#~ "If no file is assigned, then no download button is displayed in the "
+#~ "frontend."
+
+#~ msgid "Datei aus Archiv entfernen"
+#~ msgstr "Remove file from archive"
+
+#~ msgid "ZIP-Archive"
+#~ msgstr "ZIP archives"
+
+#~ msgid "Archiv löschen"
+#~ msgstr "Delete archive"
+
+#~ msgid "Aktualisiere den Cache der Datei um diese herunterzuladen"
+#~ msgstr "Update the cache of the file to download it"
+
+#~ msgid "Allgemein"
+#~ msgstr "General"
+
+#~ msgid "Download-Button Standardtext"
+#~ msgstr "Download button standard text"
+
+#~ msgid "Download-Button Style"
+#~ msgstr "Download button style"
+
+#~ msgid "Download-Button runde Ecken:"
+#~ msgstr "Download button round corners:"
+
+#~ msgid "Hashwert ausgeben, nur für "
+#~ msgstr "Output hash value, only for "
+
+#~ msgid "Hashwert ausgeben"
+#~ msgstr "Output hash value"
+
+#~ msgid "Standardtext für den Download-Button ist"
+#~ msgstr "Default text for the download button is"
+
+#~ msgid "für einen Benutzerdefinierten Text"
+#~ msgstr "for a custom text"
+
+#~ msgid "aktiviere"
+#~ msgstr "activate"
+
+#~ msgid "Archive:"
+#~ msgstr "Archives:"
+
+#~ msgid "Dateien:"
+#~ msgstr "Files:"
+
+#~ msgid "Alle Informationen und Hilfeseiten über"
+#~ msgstr "All information and help pages About"
+
+#~ msgid " findest du auf der Webseite:"
+#~ msgstr " you can find on the website:"
+
+#~ msgid "Gibt die Anzahl an Downloads aus (nur in"
+#~ msgstr "Returns the number of downloads (only in"
+
+#~ msgid "verfügbar"
+#~ msgstr "available"
+
+#~ msgid "Gibt die Dateigröße aus (nur in"
+#~ msgstr "Returns the file size (only in"
+
+#~ msgid "Dateigröße:"
+#~ msgstr "File size:"
+
+#~ msgid "Shortcode:"
+#~ msgstr "Shortcode:"
+
+#~ msgid "Cache:"
+#~ msgstr "Cache:"
+
+#~ msgid "Cache-Datei aktualisieren"
+#~ msgstr "Update cache file"
+
+#~ msgid ""
+#~ "Beispiel:</b> <code>mein-neuer-download</code> oder "
+#~ "<code>mein_neuer_download</code>"
+#~ msgstr ""
+#~ "Example:</b> <code>my-new-download</code> or <code>my_new_download</code>"
+
+#~ msgid "\", für einen Benutzerdefinierten Text "
+#~ msgstr "\", for a custom text "
+
+#~ msgid "aktiviere "
+#~ msgstr "activate "
+
+#, fuzzy
+#~| msgid "Downloads"
+#~ msgid ">Downloads"
+#~ msgstr "Downloads"

@@ -2,7 +2,8 @@
 /**
  * Plugin Name:     ShowKeys
  * Version:         0.1.0
- * Description:     Zum anzeigen von Tastenkürzel (Shortcuts)
+ * Plugin URI:      https://code.urban-base.net/showkeys?utm_source=skey_plugin_uri
+ * Description:     Simple presentation of keyboard shortcuts
  * Author:          URBAN BASE
  * Author URI:      https://urban-base.net/?utm_source=skey_author_uri
  * Copyright:       Mario Maier
@@ -39,10 +40,3 @@ if( class_exists('SKEYCore') === false ) {
 // Plugin Aktivierung
 require_once (plugin_dir_path(__FILE__) . 'lib/SKEYPluginActivate.php');
 register_activation_hook(__FILE__, array('SKEYPluginActivate', 'activate'));
-
-// Plugin Deaktivierung
-//require_once (plugin_dir_path(__FILE__) . 'lib/SKEYPluginDeactivate.php');
-//register_deactivation_hook(__FILE__, array('SKEYPluginDeactivate', 'deactivate'));
-
-// Plugin Upgrade
-//require_once (plugin_dir_path(__FILE__) . '/lib/upgrade.php');
