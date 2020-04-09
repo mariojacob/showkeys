@@ -59,7 +59,7 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
                                         ?>
                                     </select>
                                     <br>
-                                    <div class="skey-help-text"><?=esc_html__('Gibt an ob die Tasten in Kurzform oder in einer bestimmten Sprache (deutsch oder englisch) ausgegeben werden.', 'skey')?></div>
+                                    <div class="skey-help-text"><?=esc_html__('Gibt an ob die Tasten in Kurzform oder in langer Form in einer bestimmten Sprache (DE = deutsch, EN = englisch) ausgegeben werden.', 'skey')?></div>
                                 </td>
                             </tr>
                             <tr valign="top">
@@ -106,17 +106,25 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
                             <tr valign="top">
                                 <th scope="row"><?=esc_html__('Einfache Ausgabe', 'skey')?>:</th>
                                 <td valign="middle">
+                                    <p><?=esc_html__('Hier siehst du wie man eine einzelne Taste ausgibt.', 'skey')?></p>
+                                    <br>
                                     <p><?=esc_html__('Beispiel', 'skey')?>: <code>[skey k="T"]</code></p>
                                     <br>
                                     <p><?=esc_html__('Ausgabe', 'skey')?>: <kbd class="skey skey-<?=$skey_options['style']?>">T</kbd></p>
+                                    <br>
+                                    <hr>
                                 </td>
                             </tr>
                             <tr valign="top">
                                 <th scope="row"><?=esc_html__('Mehrfach Ausgabe', 'skey')?>:</th>
                                 <td valign="middle">
+                                    <p><?=esc_html__('Hier siehst du wie man eine Tastenkombination, also mehrere Tasten ausgibt.', 'skey')?></p>
+                                    <br>
                                     <p><?=esc_html__('Beispiel', 'skey')?>: <code>[skey k="Alt+Shift+T"]</code></p>
                                     <br>
                                     <p><?=esc_html__('Ausgabe', 'skey')?>: <kbd class="skey skey-<?=$skey_options['style']?>">Alt</kbd> + <kbd class="skey skey-<?=$skey_options['style']?>">Shift</kbd> + <kbd class="skey skey-<?=$skey_options['style']?>">T</kbd></p>
+                                    <br>
+                                    <hr>
                                 </td>
                             </tr>
                             <tr valign="top">
@@ -132,6 +140,31 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
                     </table> <!-- end class="form-table" -->
                 </div> <!-- end class="inside" -->
             </div> <!-- end class="postbox" -->
+
+            <div class="postbox">
+                <div class="inside">
+                    <h3><?=esc_html__('Info', 'skey')?></h3>
+                    <hr>
+                    <table class="form-table">
+                        <tbody>
+                            <tr valign="top">
+                                <th scope="row"><?=SKEY__TITLE?> <?=esc_html__('Version', 'skey')?>:</th>
+                                <td valign="middle">
+                                    <?=esc_attr($skey_options['version'])?> - <a href="https://code.urban-base.net/showkeys/release-notes/?utm_source=skey_backend" target="_blank" title="<?=esc_html__('Release notes', 'skey')?>"><?=esc_html__('release notes', 'skey')?></a>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <th scope="row"><?=esc_html__('Webseite', 'skey')?>:</th>
+                                <td valign="middle">
+                                    <a href="https://code.urban-base.net/showkeys/?utm_source=skey_backend" target="_blank" title="<?=SKEY__TITLE?> <?=esc_html__('Webseite', 'skey')?>">code.urban-base.net/showkeys</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><?=esc_html__('Hast du Verbesserungsvorschläge oder Anregungen für das Plugin, dann schreibe mir', 'skey')?>: <a href="mailto:info@code.urban-base.net?subject=<?=SKEY__TITLE?> Verbesserungsvorschläge" target="_blank">info@code.urban-base.net</a></p>
+                    <p><?=esc_html__('Wenn dir', 'skey')?> <?=SKEY__TITLE?> <?=esc_html__('gefällt, dann schreibe gerne eine', 'skey')?> <a href="https://wordpress.org/support/plugin/showkeys/reviews/?filter=5#postform" target="_blank" title="<?=SKEY__TITLE?> <?=esc_html__('bewerten', 'skey')?>">★★★★★ <?=esc_html__('Bewertung', 'skey')?></a>. <?=esc_html__('Du würdest mir sehr dabei helfen das Plugin bekannter zu machen.', 'skey')?></p>
+                </div>
+            </div>
 
             <input type="hidden" name="nonce" value="<?=wp_create_nonce('einstellungen-speichern')?>">
             <input class="button-primary" type="submit" name="submit" value="<?=esc_html__('Speichern', 'skey')?>">

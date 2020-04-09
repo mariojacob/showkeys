@@ -93,6 +93,8 @@ class SKEYCore
 
         $options = get_option('skey_options');
 
+        $key = trim($key);
+
         $output = $key;
 
         // Tasten in Großbuchstaben umwandeln

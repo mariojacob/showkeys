@@ -1,41 +1,45 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-11-17 21:35+0100\n"
-"PO-Revision-Date: 2019-11-17 21:35+0100\n"
+"POT-Creation-Date: 2020-04-09 20:37+0200\n"
+"PO-Revision-Date: 2020-04-09 20:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;esc_html__\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: lib/SKEYCore.php:159 lib/SKEYCore.php:173 lib/SKEYCore.php:179
+#: lib/SKEYCore.php:161 lib/SKEYCore.php:175 lib/SKEYCore.php:181
 msgid "Taste"
 msgstr "Key"
 
 #: lib/constants.php:10
-msgid "Kurzform"
-msgstr "Short form"
+msgid "Kurz DE"
+msgstr "Short DE"
 
 #: lib/constants.php:11
-msgid "Deutsch"
-msgstr "German"
+msgid "Kurz EN"
+msgstr "Short EN"
 
 #: lib/constants.php:12
-msgid "Englisch"
-msgstr "English"
+msgid "Lang DE"
+msgstr "Long DE"
 
-#: lib/constants.php:20
+#: lib/constants.php:13
+msgid "Lang EN"
+msgstr "Long EN"
+
+#: lib/constants.php:22
 msgid "Hell"
 msgstr "Bright"
 
-#: lib/constants.php:21
+#: lib/constants.php:23
 msgid "Dunkel"
 msgstr "Dark"
 
@@ -44,9 +48,9 @@ msgid "Einstellungen"
 msgstr "Settings"
 
 #: templates/admin_options_page_skeys.php:40
-#: templates/admin_options_page_skeys.php:111
-#: templates/admin_options_page_skeys.php:119
-#: templates/admin_options_page_skeys.php:128
+#: templates/admin_options_page_skeys.php:113
+#: templates/admin_options_page_skeys.php:125
+#: templates/admin_options_page_skeys.php:136
 msgid "Ausgabe"
 msgstr "Output"
 
@@ -56,11 +60,11 @@ msgstr "Layout"
 
 #: templates/admin_options_page_skeys.php:62
 msgid ""
-"Gibt an ob die Tasten in Kurzform oder in einer bestimmten Sprache (deutsch "
-"oder englisch) ausgegeben werden."
+"Gibt an ob die Tasten in Kurzform oder in langer Form in einer bestimmten "
+"Sprache (DE = deutsch, EN = englisch) ausgegeben werden."
 msgstr ""
-"Specifies whether the keys are printed in short form or in a specific "
-"language (German or English)."
+"Specifies whether the keys are output in short form or in long form in a "
+"specific language (DE = German, EN = English)."
 
 #: templates/admin_options_page_skeys.php:66
 msgid "Style"
@@ -79,9 +83,9 @@ msgid "Mit diesem Symbol trennst du die Tasten im Shortcode."
 msgstr "With this symbol you separate the keys in the shortcode."
 
 #: templates/admin_options_page_skeys.php:91
-#: templates/admin_options_page_skeys.php:109
-#: templates/admin_options_page_skeys.php:117
-#: templates/admin_options_page_skeys.php:126
+#: templates/admin_options_page_skeys.php:111
+#: templates/admin_options_page_skeys.php:123
+#: templates/admin_options_page_skeys.php:134
 msgid "Beispiel"
 msgstr "Example"
 
@@ -101,25 +105,34 @@ msgstr "Help"
 msgid "Einfache Ausgabe"
 msgstr "Single output"
 
-#: templates/admin_options_page_skeys.php:115
+#: templates/admin_options_page_skeys.php:109
+msgid "Hier siehst du wie man eine einzelne Taste ausgibt."
+msgstr "Here you can see how to issue a single key."
+
+#: templates/admin_options_page_skeys.php:119
 msgid "Mehrfach Ausgabe"
 msgstr "Multiple output"
 
-#: templates/admin_options_page_skeys.php:123
+#: templates/admin_options_page_skeys.php:121
+msgid ""
+"Hier siehst du wie man eine Tastenkombination, also mehrere Tasten ausgibt."
+msgstr "Here you can see how to issue a key combination, i.e. several keys."
+
+#: templates/admin_options_page_skeys.php:131
 msgid "Sonstiges"
 msgstr "Miscellaneous"
 
-#: templates/admin_options_page_skeys.php:125
+#: templates/admin_options_page_skeys.php:133
 msgid "Wenn du"
 msgstr "If you"
 
-#: templates/admin_options_page_skeys.php:125
+#: templates/admin_options_page_skeys.php:133
 msgid ""
 "ausgeben willst, aber dein Separator Symbol ist \"+\", dann kannst du die "
 "Option"
 msgstr "but your separator symbol is \"+\", then you can choose the option"
 
-#: templates/admin_options_page_skeys.php:125
+#: templates/admin_options_page_skeys.php:133
 msgid ""
 "verwenden um das Separator Symbol nur für diese Shortcode-Ausgabe auf \"#\", "
 "oder ein anderes beliebiges Zeichen zu ändern"
@@ -127,18 +140,67 @@ msgstr ""
 "to change the separator symbol to \"#\", or any other character, just for "
 "that shortcode output"
 
-#: templates/admin_options_page_skeys.php:137
+#: templates/admin_options_page_skeys.php:146
+msgid "Info"
+msgstr "Info"
+
+#: templates/admin_options_page_skeys.php:151
+msgid "Version"
+msgstr "Version"
+
+#: templates/admin_options_page_skeys.php:153
+msgid "Release notes"
+msgstr "Release notes"
+
+#: templates/admin_options_page_skeys.php:153
+msgid "release notes"
+msgstr "release notes"
+
+#: templates/admin_options_page_skeys.php:157
+#: templates/admin_options_page_skeys.php:159
+msgid "Webseite"
+msgstr "Webseite"
+
+#: templates/admin_options_page_skeys.php:164
+msgid ""
+"Hast du Verbesserungsvorschläge oder Anregungen für das Plugin, dann "
+"schreibe mir"
+msgstr ""
+"Do you have suggestions for improvement or suggestions for the plugin, then "
+"write me"
+
+#: templates/admin_options_page_skeys.php:165
+msgid "Wenn dir"
+msgstr "If you"
+
+#: templates/admin_options_page_skeys.php:165
+msgid "gefällt, dann schreibe gerne eine"
+msgstr "like, then write a"
+
+#: templates/admin_options_page_skeys.php:165
+msgid "bewerten"
+msgstr "evaluate"
+
+#: templates/admin_options_page_skeys.php:165
+msgid "Bewertung"
+msgstr "Rating"
+
+#: templates/admin_options_page_skeys.php:165
+msgid "Du würdest mir sehr dabei helfen das Plugin bekannter zu machen."
+msgstr "You would help me a lot to make the plugin known."
+
+#: templates/admin_options_page_skeys.php:170
 msgid "Speichern"
 msgstr "Save"
 
-#~ msgid "Version"
-#~ msgstr "Version"
+#~ msgid "Kurzform"
+#~ msgstr "Short form"
 
-#~ msgid "Release notes"
-#~ msgstr "Release notes"
+#~ msgid "Deutsch"
+#~ msgstr "German"
 
-#~ msgid "release notes"
-#~ msgstr "release notes"
+#~ msgid "Englisch"
+#~ msgstr "English"
 
 #~ msgid "Dokumentation und Hilfe"
 #~ msgstr "Documentation and help"
@@ -154,25 +216,6 @@ msgstr "Save"
 
 #~ msgid "FAQ"
 #~ msgstr "FAQ"
-
-#~ msgid ""
-#~ "Hast du Verbesserungsvorschläge oder Anregungen für das Plugin, dann "
-#~ "schreibe mir"
-#~ msgstr ""
-#~ "Do you have suggestions for improvement or suggestions for the plugin, "
-#~ "then write me"
-
-#~ msgid "gefällt, dann schreibe gerne eine"
-#~ msgstr "like, then write a"
-
-#~ msgid "bewerten"
-#~ msgstr "evaluate"
-
-#~ msgid "Bewertung"
-#~ msgstr "Rating"
-
-#~ msgid "Du würdest mir sehr dabei helfen das Plugin bekannter zu machen."
-#~ msgstr "You would help me a lot to make the plugin known."
 
 #~ msgid ""
 #~ "Archive sind komprimierte ZIP-Dateien mit denen du Dateien die du "
@@ -211,9 +254,6 @@ msgstr "Save"
 #~ msgstr ""
 #~ "be displayed as a download button or linked to an archive and displayed "
 #~ "in the form of a ZIP file as a download button."
-
-#~ msgid "Info"
-#~ msgstr "Info"
 
 #~ msgid ""
 #~ "Um einen leichten und schnellen Einstieg im Umgang mit diesem Plugin zu "
@@ -469,9 +509,6 @@ msgstr "Save"
 
 #~ msgid "Alle verfügbaren Farben findest du auf der"
 #~ msgstr "All available colors can be found on the"
-
-#~ msgid "Webseite"
-#~ msgstr "Webseite"
 
 #~ msgid "Dashboard"
 #~ msgstr "Dashboard"

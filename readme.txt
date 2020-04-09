@@ -4,10 +4,10 @@ Contributors: urbanbase
 Tags: keyboard, keys, shortcuts, tastenkürzel, tastatur, tasten
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Requires PHP: 7
+Requires PHP: 5.6
 Requires at least: 4.9
-Tested up to: 5.3
-Stable tag: 0.1.0
+Tested up to: 5.4
+Stable tag: 0.2.0
 
 Simple presentation of keyboard shortcuts
 
@@ -17,14 +17,10 @@ You can easily output shortcuts with this plugin.
 
 [ShowKeys Website](https://code.urban-base.net/showkeys?utm_source=wporg)
 
-= Conditions =
-
-- WordPress 4.9+ -- latest version 5.2.x
-
 = Translation =
 
-- Deutsch - de_DE = in /language inkludiert
-- Englisch - en_US = in /language inkludiert
+-   German - de_DE = in /language
+-   English - en_US = in /language
 
 == Installation ==
 
@@ -52,5 +48,6 @@ ShowKeys is translated into German and English, other languages can be added eas
 
 == Changelog ==
 
-= 0.1.0 =
-- initial release
+-   You can find the versions here: [ShowKeys release notes](https://code.urban-base.net/showkeys/release-notes/?utm_source=wporg)
+
+== Upgrade Notice ==

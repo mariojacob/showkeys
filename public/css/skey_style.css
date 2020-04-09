@@ -1,25 +1,26 @@
 .skey {
-	padding: 4px 10px !important;
-	margin: 0 2px !important;
-	border-radius: 5px !important;
+    font-family: inherit !important;
+    padding: 3px 10px !important;
+    margin: 0 2px !important;
+    border-radius: 5px !important;
 }
 
 .skey-light {
-	color: #333;
-	background-color: #fff;
-	border: 1px solid #bbb;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #bbb;
 }
 .skey-light:hover {
-	background-color: #ddd;
-	border: 1px solid #bbb;
+    background-color: #ddd;
+    border: 1px solid #bbb;
 }
 
 .skey-dark {
-	color: #fff;
-	background-color: #333;
-	border: 1px solid #555;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #555;
 }
 .skey-dark:hover {
-	background-color: #555;
-	border: 1px solid #777;
+    background-color: #555;
+    border: 1px solid #777;
 }
