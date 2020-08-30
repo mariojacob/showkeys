@@ -155,6 +155,7 @@ class SKEYCore
 
         $keys_array = explode($key_separator, $key);
 
+        $output_keys = '';
         if ($keys_array[0] != '') {
 
             $output[0] = $this->key_validate($keys_array[0]);
