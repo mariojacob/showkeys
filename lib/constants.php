@@ -5,6 +5,14 @@ if( !defined( 'ABSPATH' ) ) {
     die;
 }
 
+// Optionen
+define('SKEY__OPTIONS', [
+    'version'           => SKEY__VERSION,
+    'key_layout'        => 0,
+    'key_separator'     => '+',
+    'style'             => 'light'
+]);
+
 // Einstellungen
 define('SKEY__SETTINGS_KEY_LAYOUT', [
     __('Kurz DE', 'zdm'),

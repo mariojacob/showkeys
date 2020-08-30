@@ -9,6 +9,9 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
 
     $skey_options = get_option('skey_options');
 
+    ////////////////////
+    // Einstellungen aktualisieren
+    ////////////////////
     if (isset($_POST['submit']) && wp_verify_nonce($_POST['nonce'], 'einstellungen-speichern')) {
 
         // Layout
@@ -25,6 +28,26 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
         }
 
         $skey_options = get_option('skey_options');
+    }
+
+    ////////////////////
+    // Einstellungen zurücksetzen
+    ////////////////////
+    if (isset($_GET['reset_settings']) && wp_verify_nonce($_GET['nonce'], 'reset-settings')) {
+
+        if ($_GET['reset_settings'] == 'true') {
+
+            flush_rewrite_rules();
+
+            if (get_option('skey_options')) {
+                update_option('skey_options', SKEY__OPTIONS);
+                $skey_options = get_option('skey_options');
+            }
+
+            $skey_settings_url = 'admin.php?page=' . SKEY__SLUG . '-skeys';
+            wp_redirect($skey_settings_url);
+            exit;
+        }
     }
 
     ?>
@@ -90,6 +113,19 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
                                     <div class="skey-help-text"><?=esc_html__('Mit diesem Symbol trennst du die Tasten im Shortcode.', 'skey')?></div>
                                     <div class="skey-help-text"><?=esc_html__('Beispiel', 'skey')?>: <code>[skey k="Alt<?=esc_attr($skey_options['key_separator'])?>Shift<?=esc_attr($skey_options['key_separator'])?>T"]</code></div>
                                     <div class="skey-help-text"><?=esc_html__('Vorsicht: wenn du dieses Separator Symbol änderst, dann gilt das auch für alle bisher erstellten Shortcodes.', 'skey')?></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> <!-- end class="form-table" -->
+                    <h3><?=esc_html__('Erweitert', 'skey')?></h3>
+                    <hr>
+                    <table class="form-table">
+                        <tbody>
+                            <tr valign="top">
+                                <th scope="row"><?=esc_html__('Einstellungen zurücksetzen', 'zdm')?>:</th>
+                                <td valign="middle">
+                                    <a href="admin.php?page=<?=SKEY__SLUG?>-skeys&reset_settings=true&nonce=<?=wp_create_nonce('reset-settings')?>" class="button button-secondary"><?=esc_html__('Einstellungen zurücksetzen', 'zdm')?></a>
+                                    <div class="zdm-help-text"><?=esc_html__('Hier kannst du alle Einstellungen auf Werkseinstellungen zurücksetzen.', 'zdm')?></div>
                                 </td>
                             </tr>
                         </tbody>
