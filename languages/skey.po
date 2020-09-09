@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-09-09 11:38+0200\n"
-"PO-Revision-Date: 2020-09-09 11:38+0200\n"
+"POT-Creation-Date: 2020-09-09 11:53+0200\n"
+"PO-Revision-Date: 2020-09-09 11:53+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -43,147 +43,151 @@ msgstr ""
 msgid "Dark"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:55
+#: templates/admin_options_page_skeys.php:36
+msgid "Settings saved"
+msgstr ""
+
+#: templates/admin_options_page_skeys.php:61
 msgid "Settings"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:63
-#: templates/admin_options_page_skeys.php:149
-#: templates/admin_options_page_skeys.php:161
-#: templates/admin_options_page_skeys.php:172
+#: templates/admin_options_page_skeys.php:78
+#: templates/admin_options_page_skeys.php:164
+#: templates/admin_options_page_skeys.php:176
+#: templates/admin_options_page_skeys.php:187
 msgid "Output"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:68
+#: templates/admin_options_page_skeys.php:83
 msgid "Layout"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:85
+#: templates/admin_options_page_skeys.php:100
 msgid ""
 "Specifies whether the keys are output in short form or in long form in a "
 "specific language (DE = German, EN = English)."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:89
+#: templates/admin_options_page_skeys.php:104
 msgid "Style"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:105
+#: templates/admin_options_page_skeys.php:120
 msgid "Determines the basic look either bright or dark."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:109
+#: templates/admin_options_page_skeys.php:124
 msgid "Separator symbol"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:113
+#: templates/admin_options_page_skeys.php:128
 msgid "With this symbol you separate the keys in the shortcode."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:114
-#: templates/admin_options_page_skeys.php:147
-#: templates/admin_options_page_skeys.php:159
-#: templates/admin_options_page_skeys.php:170
+#: templates/admin_options_page_skeys.php:129
+#: templates/admin_options_page_skeys.php:162
+#: templates/admin_options_page_skeys.php:174
+#: templates/admin_options_page_skeys.php:185
 msgid "Example"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:115
+#: templates/admin_options_page_skeys.php:130
 msgid ""
 "Caution: if you change this separator symbol, this also applies to all "
 "previously created shortcodes."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:120
+#: templates/admin_options_page_skeys.php:135
 msgid "Extended"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:125
-#: templates/admin_options_page_skeys.php:127
+#: templates/admin_options_page_skeys.php:140
+#: templates/admin_options_page_skeys.php:142
 msgid "Reset settings"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:128
+#: templates/admin_options_page_skeys.php:143
 msgid "Here you can reset all settings to the factory settings."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:138
+#: templates/admin_options_page_skeys.php:153
 msgid "Help"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:143
+#: templates/admin_options_page_skeys.php:158
 msgid "Simple output"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:145
+#: templates/admin_options_page_skeys.php:160
 msgid "Here you can see how to issue a single key."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:155
+#: templates/admin_options_page_skeys.php:170
 msgid "Multiple output"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:157
+#: templates/admin_options_page_skeys.php:172
 msgid "Here you can see how to issue a key combination, i.e. several keys."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:167
+#: templates/admin_options_page_skeys.php:182
 msgid "Other"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:169
-#: templates/admin_options_page_skeys.php:201
+#: templates/admin_options_page_skeys.php:184
+#: templates/admin_options_page_skeys.php:216
 msgid "If you"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:169
+#: templates/admin_options_page_skeys.php:184
 msgid "but your separator symbol is \"+\", then you can choose the option"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:169
+#: templates/admin_options_page_skeys.php:184
 msgid ""
 "to change the separator symbol to \"#\", or any other character, just for "
 "that shortcode output"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:182
+#: templates/admin_options_page_skeys.php:197
 msgid "Info"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:187
+#: templates/admin_options_page_skeys.php:202
 msgid "Version"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:189
+#: templates/admin_options_page_skeys.php:204
 msgid "Release notes"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:189
+#: templates/admin_options_page_skeys.php:204
 msgid "release notes"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:193
-#: templates/admin_options_page_skeys.php:195
+#: templates/admin_options_page_skeys.php:208
+#: templates/admin_options_page_skeys.php:210
 msgid "Website"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:200
+#: templates/admin_options_page_skeys.php:215
 msgid ""
 "Do you have suggestions for improvement or suggestions for the plugin, then "
 "write me"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:201
+#: templates/admin_options_page_skeys.php:216
 msgid "like, then write a"
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:201
+#: templates/admin_options_page_skeys.php:216
 msgid "rating."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:201
+#: templates/admin_options_page_skeys.php:216
 msgid "You would help me a lot to make the plugin known."
 msgstr ""
 
-#: templates/admin_options_page_skeys.php:206
+#: templates/admin_options_page_skeys.php:221
 msgid "Save"
 msgstr ""

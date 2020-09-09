@@ -5,6 +5,8 @@ if (!defined('ABSPATH')) {
     die;
 }
 
+$skey_note = '';
+
 if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
 
     $skey_options = get_option('skey_options');
@@ -27,7 +29,11 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
             $status = 1;
         }
 
+        // Get plugin options
         $skey_options = get_option('skey_options');
+
+        // Success note
+        $skey_note = esc_html__('Settings saved', 'skey');
     }
 
     ////////////////////
@@ -55,6 +61,15 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
         <h1 class="wp-heading-inline"><?=SKEY__TITLE?> <?=esc_html__('Settings', 'skey')?></h1>
 
         <hr class="wp-header-end">
+
+        <?php
+        if ($skey_note != '') {
+
+            echo '<div class="notice notice-success">';
+            echo '<br><b>' . $skey_note . '</b><br><br>';
+            echo '</div>';
+        }// end if $skey_note != ''
+        ?>
         
         <form action="" method="post">
 
