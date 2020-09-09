@@ -13,7 +13,7 @@
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-// Abbruch bei direktem Zugriff
+// Abort by direct access
 if( !defined( 'ABSPATH' ) ) {
     die;
 }

@@ -1,6 +1,6 @@
 <?php
 
-// Abbruch bei direktem Zugriff
+// Abort by direct access
 if( !defined( 'ABSPATH' ) ) {
     die;
 }
@@ -19,20 +19,20 @@ class SKEYCore
     }
 
     /**
-     * Erzeugt im Backend eine Einstellungs-Seite im Reiter Einstellungen
+     * Settings site in backend
      */
     public function admin_menu()
     {
         add_options_page(
-            SKEY__TITLE,                                // Seitentitel
-            SKEY__TITLE,                                // Menuetext
-            'manage_options',                           // Zugriffslevel
-            SKEY__SLUG . '-skeys',                      // URL des submenue
-            array($this, 'admin_options_page_skeys'));  // Name der Funktion die ausgeführt wird
+            SKEY__TITLE,                                // Page title
+            SKEY__TITLE,                                // Menu text
+            'manage_options',                           // Access level
+            SKEY__SLUG . '-skeys',                      // URL submenu
+            array($this, 'admin_options_page_skeys'));  // Name of the function that is being executed
     }
 
     /**
-     * Admin Einstellungen
+     * Admin settings
      */
     public function admin_options_page_skeys()
     {
@@ -40,7 +40,7 @@ class SKEYCore
     }
 
     /**
-     * Bindet Admin Skripte ein
+     * Integrates admin scripts
      */
     public function enqueue_admin_scripts()
     {
@@ -54,7 +54,7 @@ class SKEYCore
     }
 
     /**
-     * Bindet Frontend Skripte ein
+     * Integrates frontend scripts
      */
     public function enqueue_frontend_scripts()
     {
@@ -64,26 +64,26 @@ class SKEYCore
     }
 
     /**
-     * Registriert grundlegende Komponenten in WP
+     * Registers basic components in WP
      */
     public function register()
     {
 
-        // Admin Scripte einbinden
+        // Include admin scripts
         add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts'));
 
-        // Frontend Scripte einbinden
+        // Include frontend scripts
         add_action('wp_enqueue_scripts', array($this, 'enqueue_frontend_scripts'));
 
-        // Admin Menu
+        // Admin menu
         add_action('admin_menu', array($this, 'admin_menu'));
 
-        // Shortcode Key Ausgabe
+        // Shortcode key output
         add_shortcode('skey', array($this, 'shortcode_key'));
     }
 
     /**
-     * Konvertiert die eingegebenen Werte
+     * Converts the entered values
      *
      * @param string $key
      * @return string
@@ -97,26 +97,26 @@ class SKEYCore
 
         $output = $key;
 
-        // Tasten in Großbuchstaben umwandeln
+        // Convert keys to uppercase
         if (in_array($key, SKEY__KEYS_UPPERCASE_INPUT)) {
             $output = strtoupper($key);
         }
 
-        // Standard Tasten Umwandlung
+        // Standard key conversion
         for ($i = 0; $i < count(SKEY__KEYS_STANDARD_INPUT); $i++) {
 
             if ($key == SKEY__KEYS_STANDARD_INPUT[$i]) {
                 $output = SKEY__KEYS_STANDARD_OUTPUT[$options['key_layout']][$i];
             }
         }
-        // Apple Tasten Umwandlung
+        // Apple keys conversion
         for ($i = 0; $i < count(SKEY__KEYS_APPLE_INPUT); $i++) {
 
             if ($key == SKEY__KEYS_APPLE_INPUT[$i]) {
                 $output = SKEY__KEYS_APPLE_OUTPUT[$options['key_layout']][$i];
             }
         }
-        // Windows Tasten Umwandlung
+        // Windows keys conversion
         for ($i = 0; $i < count(SKEY__KEYS_WINDOWS_INPUT); $i++) {
 
             if ($key == SKEY__KEYS_WINDOWS_INPUT[$i]) {
@@ -128,7 +128,7 @@ class SKEYCore
     }
 
     /**
-     * Shortcode für einzelne Taste
+     * Shortcode for single key
      *
      * @param string $atts
      * @param string $content
@@ -159,7 +159,7 @@ class SKEYCore
         if ($keys_array[0] != '') {
 
             $output[0] = $this->key_validate($keys_array[0]);
-            $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Taste', 'skey') . ': ' . $output[0] . '">' . $output[0] . '</kbd>';
+            $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Key', 'skey') . ': ' . $output[0] . '">' . $output[0] . '</kbd>';
         }
 
         if (count($keys_array) >= 1) {
@@ -173,13 +173,13 @@ class SKEYCore
                     }
     
                     $output[$i] = $this->key_validate($keys_array[$i]);
-                    $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Taste', 'skey') . ': ' . $output[$i] . '">' . $output[$i] . '</kbd>';
+                    $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Key', 'skey') . ': ' . $output[$i] . '">' . $output[$i] . '</kbd>';
                 }
             }
             return $output_keys;
         } else {
             $output = $this->key_validate($key);
-            return '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Taste', 'skey') . ': ' . $output . '">' . $output . '</kbd>';
+            return '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Key', 'skey') . ': ' . $output . '">' . $output . '</kbd>';
         }
     }
 }

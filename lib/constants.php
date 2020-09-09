@@ -1,11 +1,11 @@
 <?php
 
-// Abbruch bei direktem Zugriff
+// Abort by direct access
 if( !defined( 'ABSPATH' ) ) {
     die;
 }
 
-// Optionen
+// Options
 define('SKEY__OPTIONS', [
     'version'           => SKEY__VERSION,
     'key_layout'        => 0,
@@ -13,12 +13,12 @@ define('SKEY__OPTIONS', [
     'style'             => 'light'
 ]);
 
-// Einstellungen
+// Settings
 define('SKEY__SETTINGS_KEY_LAYOUT', [
-    __('Kurz DE', 'zdm'),
-    __('Kurz EN', 'zdm'),
-    __('Lang DE', 'zdm'),
-    __('Lang EN', 'zdm')
+    esc_html__('Short DE', 'skey'),
+    esc_html__('Short EN', 'skey'),
+    esc_html__('Long DE', 'skey'),
+    esc_html__('Long EN', 'skey')
 ]);
 define('SKEY__SETTINGS_KEY_LAYOUT_VAL', [
     0,
@@ -27,8 +27,8 @@ define('SKEY__SETTINGS_KEY_LAYOUT_VAL', [
     3
 ]);
 define('SKEY__SETTINGS_STYLE', [
-    __('Hell', 'zdm'),
-    __('Dunkel', 'zdm')
+    esc_html__('Bright', 'skey'),
+    esc_html__('Dark', 'skey')
 ]);
 define('SKEY__SETTINGS_STYLE_VAL', [
     'light',
