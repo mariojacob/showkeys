@@ -39,3 +39,6 @@ if( class_exists('SKEYCore') === false ) {
 // Plugin Aktivierung
 require_once (plugin_dir_path(__FILE__) . 'lib/SKEYPluginActivate.php');
 register_activation_hook(__FILE__, array('SKEYPluginActivate', 'activate'));
+
+// Plugin upgrade
+require_once (plugin_dir_path(__FILE__) . '/lib/upgrade.php');
