@@ -45,11 +45,11 @@ class SKEYCore
     public function enqueue_admin_scripts()
     {
         // Admin CSS
-        wp_register_style('skey_admin_styles', plugins_url('../admin/css/skey_admin_style.css?v=' . SKEY__VERSION . time(), __FILE__));
+        wp_register_style('skey_admin_styles', plugins_url('../admin/css/skey_admin_style.min.css?v=' . SKEY__VERSION, __FILE__));
         wp_enqueue_style('skey_admin_styles');
 
         // Admin CSS 2
-        wp_register_style('skey_admin_styles_2', plugins_url('../public/css/skey_style.css?v=' . SKEY__VERSION, __FILE__));
+        wp_register_style('skey_admin_styles_2', plugins_url('../public/css/skey_style.min.css?v=' . SKEY__VERSION, __FILE__));
         wp_enqueue_style('skey_admin_styles_2');
     }
 
@@ -59,7 +59,7 @@ class SKEYCore
     public function enqueue_frontend_scripts()
     {
         // Frontend CSS
-        wp_register_style('skey_styles', plugins_url('../public/css/skey_style.css?v=' . SKEY__VERSION, __FILE__));
+        wp_register_style('skey_styles', plugins_url('../public/css/skey_style.min.css?v=' . SKEY__VERSION, __FILE__));
         wp_enqueue_style('skey_styles');
     }
 
