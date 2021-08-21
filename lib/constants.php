@@ -26,7 +26,7 @@ define('SKEY__SETTINGS_KEY_LAYOUT_VAL', [
     3
 ]);
 define('SKEY__SETTINGS_STYLE', [
-    esc_html__('Bright', 'skey'),
+    esc_html__('Light', 'skey'),
     esc_html__('Dark', 'skey')
 ]);
 define('SKEY__SETTINGS_STYLE_VAL', [
