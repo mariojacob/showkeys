@@ -44,7 +44,8 @@ The default language is English and is translated into German, other languages c
 
 == Screenshots ==
 
-1.  Settings
+1.  Settings with light mode
+2.  Settings with dark mode
 
 == Changelog ==
 
