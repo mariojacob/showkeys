@@ -1,9 +1,8 @@
 <?php
 
 // Abort by direct access
-if( !defined( 'ABSPATH' ) ) {
+if( !defined( 'ABSPATH' ) )
     die;
-}
 
 /**
  * SKEY-Core
@@ -98,30 +97,23 @@ class SKEYCore
         $output = $key;
 
         // Convert keys to uppercase
-        if (in_array($key, SKEY__KEYS_UPPERCASE_INPUT)) {
+        if (in_array($key, SKEY__KEYS_UPPERCASE_INPUT))
             $output = strtoupper($key);
-        }
 
         // Standard key conversion
         for ($i = 0; $i < count(SKEY__KEYS_STANDARD_INPUT); $i++) {
-
-            if ($key == SKEY__KEYS_STANDARD_INPUT[$i]) {
+            if ($key == SKEY__KEYS_STANDARD_INPUT[$i])
                 $output = SKEY__KEYS_STANDARD_OUTPUT[$options['key_layout']][$i];
-            }
         }
         // Apple keys conversion
         for ($i = 0; $i < count(SKEY__KEYS_APPLE_INPUT); $i++) {
-
-            if ($key == SKEY__KEYS_APPLE_INPUT[$i]) {
+            if ($key == SKEY__KEYS_APPLE_INPUT[$i])
                 $output = SKEY__KEYS_APPLE_OUTPUT[$options['key_layout']][$i];
-            }
         }
         // Windows keys conversion
         for ($i = 0; $i < count(SKEY__KEYS_WINDOWS_INPUT); $i++) {
-
-            if ($key == SKEY__KEYS_WINDOWS_INPUT[$i]) {
+            if ($key == SKEY__KEYS_WINDOWS_INPUT[$i])
                 $output = SKEY__KEYS_WINDOWS_OUTPUT[$options['key_layout']][$i];
-            }
         }
 
         return $output;
@@ -147,11 +139,10 @@ class SKEYCore
         );
 
         $key = strtolower(htmlspecialchars($atts['k']));
-        if ($atts['s'] != '') {
+        if ($atts['s'] != '')
             $key_separator = htmlspecialchars($atts['s']);
-        } else {
+        else
             $key_separator = $options['key_separator'];
-        }
 
         $keys_array = explode($key_separator, $key);
 
@@ -168,9 +159,8 @@ class SKEYCore
 
                 if ($keys_array[$i] != '') {
 
-                    if ($keys_array[$i-1] != '') {
+                    if ($keys_array[$i-1] != '')
                         $output_keys .= ' + ';
-                    }
     
                     $output[$i] = $this->key_validate($keys_array[$i]);
                     $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Key', 'skey') . ': ' . $output[$i] . '">' . $output[$i] . '</kbd>';

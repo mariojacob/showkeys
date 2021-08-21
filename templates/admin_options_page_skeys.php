@@ -1,9 +1,8 @@
 <?php
 
 // Abort by direct access
-if (!defined('ABSPATH')) {
+if (!defined('ABSPATH'))
     die;
-}
 
 $skey_note = '';
 
@@ -68,7 +67,7 @@ if (current_user_can(SKEY__STANDARD_USER_ROLE)) {
             echo '<div class="notice notice-success">';
             echo '<br><b>' . $skey_note . '</b><br><br>';
             echo '</div>';
-        }// end if $skey_note != ''
+        } // end if $skey_note != ''
         ?>
         
         <form action="" method="post">

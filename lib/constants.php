@@ -1,9 +1,8 @@
 <?php
 
 // Abort by direct access
-if( !defined( 'ABSPATH' ) ) {
+if( !defined( 'ABSPATH' ) )
     die;
-}
 
 // Options
 define('SKEY__OPTIONS', [

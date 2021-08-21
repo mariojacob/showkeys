@@ -1,9 +1,8 @@
 <?php
 
 // Abort by direct access
-if( !defined( 'ABSPATH' ) ) {
+if( !defined( 'ABSPATH' ) )
     die;
-}
 
 /**
  * Plugin activation
@@ -17,10 +16,9 @@ class SKEYPluginActivate
         flush_rewrite_rules();
 
         // Create options
-        if (get_option('skey_options')) {
+        if (get_option('skey_options'))
             update_option('skey_options', SKEY__OPTIONS);
-        } else {
+        else
             add_option('skey_options', SKEY__OPTIONS);
-        }
     }
 }

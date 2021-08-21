@@ -14,9 +14,8 @@
  */
 
 // Abort by direct access
-if( !defined( 'ABSPATH' ) ) {
+if( !defined( 'ABSPATH' ) )
     die;
-}
 
 // Konstanten
 define('SKEY__PATH', plugin_dir_path(__FILE__));
@@ -28,7 +27,7 @@ define('SKEY__STANDARD_USER_ROLE', 'manage_options');
 require_once(dirname(__FILE__) . '/lib/constants.php');
 
 // Lade Sprachdateien
-load_plugin_textdomain( 'skey', false, dirname(plugin_basename(__FILE__)) . '/languages' );
+load_plugin_textdomain('skey', false, dirname(plugin_basename(__FILE__)) . '/languages');
 
 // Core Klasse laden
 if( class_exists('SKEYCore') === false ) {
