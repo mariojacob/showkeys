@@ -6,8 +6,8 @@ License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires PHP: 7.2
 Requires at least: 4.9
-Tested up to: 5.5
-Stable tag: 0.3.0
+Tested up to: 5.8
+Stable tag: 0.4.0
 
 Simple presentation of keyboard shortcuts
 
