@@ -1,6 +1,6 @@
 # ShowKeys
 
-![screenshot-1](https://plugins.svn.wordpress.org/showkeys/assets/banner-1544x500.png)
+![ShowKeys title banner](https://ps.w.org/showkeys/assets/banner-1544x500.png)
 
 [![ShowKeys](https://img.shields.io/wordpress/plugin/wp-version/showkeys)](https://wordpress.org/plugins/showkeys/) [![ShowKeys](https://img.shields.io/wordpress/plugin/tested/showkeys)](https://wordpress.org/plugins/showkeys/) [![ShowKeys](https://img.shields.io/wordpress/plugin/required-php/showkeys)](https://wordpress.org/plugins/showkeys/)
 
