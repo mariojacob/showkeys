@@ -1,7 +1,7 @@
 <?php
 
 // Abort by direct access
-if( !defined( 'ABSPATH' ) )
+if (!defined('ABSPATH'))
     die;
 
 // Options
@@ -52,64 +52,64 @@ define('SKEY__KEYS_APPLE_INPUT', [
 ]);
 define('SKEY__KEYS_APPLE_OUTPUT', array(
     array(
-        'cmd',
-        'cmd',
-        'cmd',
-        'cmd',
-        'cmd',
-        'alt',
-        'alt',
-        'alt',
-        'alt',
+        '⌘ cmd',
+        '⌘ cmd',
+        '⌘ cmd',
+        '⌘ cmd',
+        '⌘ cmd',
+        '⌥ alt',
+        '⌥ alt',
+        '⌥ alt',
+        '⌥ alt',
         'fn',
-        'delete',
-        'delete',
-        'delete'
+        '⌫ delete',
+        '⌫ delete',
+        '⌫ delete'
     ),
     array(
-        'cmd',
-        'cmd',
-        'cmd',
-        'cmd',
-        'cmd',
-        'alt',
-        'alt',
-        'alt',
-        'alt',
+        '⌘ cmd',
+        '⌘ cmd',
+        '⌘ cmd',
+        '⌘ cmd',
+        '⌘ cmd',
+        '⌥ alt',
+        '⌥ alt',
+        '⌥ alt',
+        '⌥ alt',
         'fn',
-        'delete',
-        'delete',
-        'delete'
+        '⌫ delete',
+        '⌫ delete',
+        '⌫ delete'
     ),
     array(
-        'Befehl',
-        'Befehl',
-        'Befehl',
-        'Befehl',
-        'Befehl',
-        'Wahl',
-        'Wahl',
-        'Wahl',
-        'Wahl',
+        '⌘ Befehl',
+        '⌘ Befehl',
+        '⌘ Befehl',
+        '⌘ Befehl',
+        '⌘ Befehl',
+        '⌥ Wahl',
+        '⌥ Wahl',
+        '⌥ Wahl',
+        '⌥ Wahl',
         'fn',
-        'entfernen',
-        'entfernen',
-        'entfernen'
+        '⌫ entfernen',
+        '⌫ entfernen',
+        '⌫ entfernen'
     ),
     array(
-        'command',
-        'command',
-        'command',
-        'command',
-        'command',
-        'option',
-        'option',
-        'option',
-        'option',
+        '⌘ command',
+        '⌘ command',
+        '⌘ command',
+        '⌘ command',
+        '⌘ command',
+        '⌥ option',
+        '⌥ option',
+        '⌥ option',
+        '⌥ option',
         'fn',
-        'delete',
-        'delete',
-        'delete'
+        '⌫ delete',
+        '⌫ delete',
+        '⌫ delete'
     )
 ));
 
@@ -120,20 +120,20 @@ define('SKEY__KEYS_WINDOWS_INPUT', [
 ]);
 define('SKEY__KEYS_WINDOWS_OUTPUT', array(
     array(
-        'Win',
-        'Win'
+        '⊞ Win',
+        '⊞ Win'
     ),
     array(
-        'Win',
-        'Win'
+        '⊞ Win',
+        '⊞ Win'
     ),
     array(
-        'Windows',
-        'Windows'
+        '⊞ Windows',
+        '⊞ Windows'
     ),
     array(
-        'Windows',
-        'Windows'
+        '⊞ Windows',
+        '⊞ Windows'
     )
 ));
 
@@ -210,10 +210,10 @@ define('SKEY__KEYS_STANDARD_OUTPUT', array(
         'eingabe',
         'eingabe',
         'eingabe',
-        'umschalt',
-        'umschalt',
-        'tab',
-        'tab',
+        'umschalt ⇧',
+        'umschalt ⇧',
+        'tab ↹',
+        'tab ↹',
         'menu',
         'menu',
         'menu',
@@ -272,10 +272,10 @@ define('SKEY__KEYS_STANDARD_OUTPUT', array(
         'Enter',
         'Enter',
         'Enter',
-        'Shift',
-        'Shift',
-        'Tab',
-        'Tab',
+        'Shift ⇧',
+        'Shift ⇧',
+        'Tab ↹',
+        'Tab ↹',
         'menu',
         'menu',
         'menu',
@@ -334,10 +334,10 @@ define('SKEY__KEYS_STANDARD_OUTPUT', array(
         'Eingabe',
         'Eingabe',
         'Eingabe',
-        'Umschalt',
-        'Umschalt',
-        'Tabulator',
-        'Tabulator',
+        'Umschalt ⇧',
+        'Umschalt ⇧',
+        'Tabulator ↹',
+        'Tabulator ↹',
         'Menü',
         'Menü',
         'Menü',
@@ -396,10 +396,10 @@ define('SKEY__KEYS_STANDARD_OUTPUT', array(
         'Return',
         'Return',
         'Return',
-        'Shift',
-        'Shift',
-        'Tab',
-        'Tab',
+        'Shift ⇧',
+        'Shift ⇧',
+        'Tab ↹',
+        'Tab ↹',
         'Menu',
         'Menu',
         'Menu',

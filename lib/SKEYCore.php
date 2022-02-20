@@ -25,7 +25,7 @@ class SKEYCore
         add_options_page(
             SKEY__TITLE,                                // Page title
             SKEY__TITLE,                                // Menu text
-            'manage_options',                           // Access level
+            SKEY__STANDARD_USER_ROLE,                   // Access level
             SKEY__SLUG . '-skeys',                      // URL submenu
             array($this, 'admin_options_page_skeys'));  // Name of the function that is being executed
     }
