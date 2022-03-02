@@ -1,4 +1,4 @@
-![ShowKeys title banner](https://ps.w.org/showkeys/assets/banner-1544x500.png)
+![ShowKeys Title](https://user-images.githubusercontent.com/8767638/156455013-19a4a069-13eb-4155-99cb-5614a67bc819.png)
 
 # ShowKeys
 

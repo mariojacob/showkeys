@@ -1,7 +1,7 @@
 <?php
 
 // Abort by direct access
-if( !defined( 'ABSPATH' ) )
+if (!defined('ABSPATH'))
     die;
 
 /**
@@ -27,7 +27,8 @@ class SKEYCore
             SKEY__TITLE,                                // Menu text
             SKEY__STANDARD_USER_ROLE,                   // Access level
             SKEY__SLUG . '-skeys',                      // URL submenu
-            array($this, 'admin_options_page_skeys'));  // Name of the function that is being executed
+            array($this, 'admin_options_page_skeys')
+        );  // Name of the function that is being executed
     }
 
     /**
@@ -35,7 +36,7 @@ class SKEYCore
      */
     public function admin_options_page_skeys()
     {
-        require_once (plugin_dir_path(__FILE__) . '../templates/admin_options_page_skeys.php');
+        require_once(plugin_dir_path(__FILE__) . '../templates/admin_options_page_skeys.php');
     }
 
     /**
@@ -87,7 +88,7 @@ class SKEYCore
      * @param string $key
      * @return string
      */
-    public function key_validate($key)
+    public function key_validate($key, $ex)
     {
 
         $options = get_option('skey_options');
@@ -96,24 +97,26 @@ class SKEYCore
 
         $output = $key;
 
-        // Convert keys to uppercase
-        if (in_array($key, SKEY__KEYS_UPPERCASE_INPUT))
-            $output = strtoupper($key);
+        if ($ex == '') {
+            // Convert keys to uppercase
+            if (in_array($key, SKEY__KEYS_UPPERCASE_INPUT))
+                $output = strtoupper($key);
 
-        // Standard key conversion
-        for ($i = 0; $i < count(SKEY__KEYS_STANDARD_INPUT); $i++) {
-            if ($key == SKEY__KEYS_STANDARD_INPUT[$i])
-                $output = SKEY__KEYS_STANDARD_OUTPUT[$options['key_layout']][$i];
-        }
-        // Apple keys conversion
-        for ($i = 0; $i < count(SKEY__KEYS_APPLE_INPUT); $i++) {
-            if ($key == SKEY__KEYS_APPLE_INPUT[$i])
-                $output = SKEY__KEYS_APPLE_OUTPUT[$options['key_layout']][$i];
-        }
-        // Windows keys conversion
-        for ($i = 0; $i < count(SKEY__KEYS_WINDOWS_INPUT); $i++) {
-            if ($key == SKEY__KEYS_WINDOWS_INPUT[$i])
-                $output = SKEY__KEYS_WINDOWS_OUTPUT[$options['key_layout']][$i];
+            // Standard key conversion
+            for ($i = 0; $i < count(SKEY__KEYS_STANDARD_INPUT); $i++) {
+                if ($key == SKEY__KEYS_STANDARD_INPUT[$i])
+                    $output = SKEY__KEYS_STANDARD_OUTPUT[$options['key_layout']][$i];
+            }
+            // Apple keys conversion
+            for ($i = 0; $i < count(SKEY__KEYS_APPLE_INPUT); $i++) {
+                if ($key == SKEY__KEYS_APPLE_INPUT[$i])
+                    $output = SKEY__KEYS_APPLE_OUTPUT[$options['key_layout']][$i];
+            }
+            // Windows keys conversion
+            for ($i = 0; $i < count(SKEY__KEYS_WINDOWS_INPUT); $i++) {
+                if ($key == SKEY__KEYS_WINDOWS_INPUT[$i])
+                    $output = SKEY__KEYS_WINDOWS_OUTPUT[$options['key_layout']][$i];
+            }
         }
 
         return $output;
@@ -134,8 +137,10 @@ class SKEYCore
         $atts = shortcode_atts(
             array(
                 'k' => '',
-                's' => ''
-                ), $atts
+                's' => '',
+                'ex' => ''
+            ),
+            $atts
         );
 
         $key = strtolower(htmlspecialchars($atts['k']));
@@ -146,29 +151,32 @@ class SKEYCore
 
         $keys_array = explode($key_separator, $key);
 
+        // Explizite Ausnahme
+        $ex = strtolower(htmlspecialchars($atts['ex']));
+
         $output_keys = '';
         if ($keys_array[0] != '') {
 
-            $output[0] = $this->key_validate($keys_array[0]);
+            $output[0] = $this->key_validate($keys_array[0], $ex);
             $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Key', 'skey') . ': ' . $output[0] . '">' . $output[0] . '</kbd>';
         }
 
         if (count($keys_array) >= 1) {
 
-            for ($i=1; $i < count($keys_array); $i++) {
+            for ($i = 1; $i < count($keys_array); $i++) {
 
                 if ($keys_array[$i] != '') {
 
-                    if ($keys_array[$i-1] != '')
+                    if ($keys_array[$i - 1] != '')
                         $output_keys .= ' + ';
-    
-                    $output[$i] = $this->key_validate($keys_array[$i]);
+
+                    $output[$i] = $this->key_validate($keys_array[$i], $ex);
                     $output_keys .= '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Key', 'skey') . ': ' . $output[$i] . '">' . $output[$i] . '</kbd>';
                 }
             }
             return $output_keys;
         } else {
-            $output = $this->key_validate($key);
+            $output = $this->key_validate($key, $ex);
             return '<kbd class="skey skey-' . $options['style'] . '" title="' . esc_html__('Key', 'skey') . ': ' . $output . '">' . $output . '</kbd>';
         }
     }

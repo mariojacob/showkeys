@@ -1,7 +1,8 @@
 <?php
+
 /**
  * Plugin Name:     ShowKeys
- * Version:         0.4.0
+ * Version:         0.5.0
  * Plugin URI:      https://code.urban-base.net/showkeys?utm_source=skey_plugin_uri
  * Description:     Simple presentation of keyboard shortcuts
  * Author:          URBAN BASE
@@ -14,7 +15,7 @@
  */
 
 // Abort by direct access
-if( !defined( 'ABSPATH' ) )
+if (!defined('ABSPATH'))
     die;
 
 // Konstanten
@@ -22,7 +23,7 @@ define('SKEY__PATH', plugin_dir_path(__FILE__));
 define('SKEY__PLUGIN_URL', plugin_dir_url(__FILE__));
 define('SKEY__SLUG', 'showkeys');
 define('SKEY__TITLE', 'ShowKeys');
-define('SKEY__VERSION', '0.4.0');
+define('SKEY__VERSION', '0.5.0');
 define('SKEY__STANDARD_USER_ROLE', 'manage_options');
 require_once(dirname(__FILE__) . '/lib/constants.php');
 
@@ -30,15 +31,15 @@ require_once(dirname(__FILE__) . '/lib/constants.php');
 load_plugin_textdomain('skey', false, dirname(plugin_basename(__FILE__)) . '/languages');
 
 // Core Klasse laden
-if( class_exists('SKEYCore') === false ) {
-	require_once(dirname(__FILE__) . '/lib/SKEYCore.php');
+if (class_exists('SKEYCore') === false) {
+    require_once(dirname(__FILE__) . '/lib/SKEYCore.php');
     $skeyCore = new SKEYCore();
     $skeyCore->register();
 }
 
 // Plugin Aktivierung
-require_once (plugin_dir_path(__FILE__) . 'lib/SKEYPluginActivate.php');
+require_once(plugin_dir_path(__FILE__) . 'lib/SKEYPluginActivate.php');
 register_activation_hook(__FILE__, array('SKEYPluginActivate', 'activate'));
 
 // Plugin upgrade
-require_once (plugin_dir_path(__FILE__) . '/lib/upgrade.php');
+require_once(plugin_dir_path(__FILE__) . '/lib/upgrade.php');
