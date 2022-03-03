@@ -41,6 +41,14 @@ Die einzelnen Symbole werden standardmäßig mit einem Trennzeichen „+“ von 
 
 Dieses Trennzeichen kann in den Einstellungen geändert werden.
 
+### Explizite Ausnahmen
+
+Wenn du willst dass genau die Zeichen ausgegeben werden die du angibst, dann füge im Shortcode einfach `ex="on"` hinzu und die automatische Umwandlung wird deaktiviert für diese eine Shortcode Ausgabe.
+
+```TXT
+[skey k="Win+Shift+Tab" ex="on"]
+```
+
 ### Sonstiges
 
 Wenn du Alt Shift + ausgeben willst, aber dein Separator Symbol ist „+“, dann kannst du die Option `s="#"` verwenden um das Separator Symbol nur für diese Shortcode-Ausgabe auf „#“, oder ein anderes beliebiges Zeichen zu ändern.

@@ -41,6 +41,14 @@ The individual symbols are separated from each other with a separator "+" by def
 
 This separator can be changed in the settings.
 
+### Explicit Exceptions
+
+If you want the exact characters you specify to be output, then just add `ex="on"` in the shortcode and the automatic conversion will be disabled for that one shortcode output.
+
+```TXT
+[skey k="Win+Shift+Tab" ex="on"]
+```
+
 ### Miscellaneous
 
 If you want to output "Alt Shift +", but your separator symbol is "+", then you can use the option `s="#"` to change the separator symbol to "#" or any other character for this shortcode output only .
