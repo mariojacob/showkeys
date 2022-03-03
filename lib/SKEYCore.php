@@ -143,7 +143,11 @@ class SKEYCore
             $atts
         );
 
-        $key = strtolower(htmlspecialchars($atts['k']));
+        if ($atts['ex'] != '')
+            $key = htmlspecialchars($atts['k']);
+        else
+            $key = strtolower(htmlspecialchars($atts['k']));
+
         if ($atts['s'] != '')
             $key_separator = htmlspecialchars($atts['s']);
         else
